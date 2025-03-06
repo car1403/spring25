@@ -10,4 +10,8 @@ public class MainController {
     public String main(){
         return "index";
     }
+    @RequestMapping("/second")
+    public String second(){
+        return "second";
+    }
 }
