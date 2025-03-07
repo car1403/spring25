@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b991fd35-e78c-4f07-aeca-087106655e3e" name="Changes" comment="2025.3.7&#10;second" />
+    <list default="true" id="b991fd35-e78c-4f07-aeca-087106655e3e" name="Changes" comment="2025.3.7&#10;test3">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,7 +59,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="jmlee" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -150,6 +152,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Day01ApplicationTests" />
+        <item itemvalue="Gradle.day01 [bootRun]" />
+        <item itemvalue="Gradle.Day01ApplicationTests" />
         <item itemvalue="Gradle.day01 [bootRun]" />
         <item itemvalue="Gradle.Day01ApplicationTests" />
       </list>
@@ -172,7 +177,7 @@
       <option name="presentableId" value="Default" />
       <updated>1741241184581</updated>
       <workItem from="1741241185623" duration="6021000" />
-      <workItem from="1741249375310" duration="2473000" />
+      <workItem from="1741249375310" duration="4200000" />
     </task>
     <task id="LOCAL-00001" summary="2025.3.6&#10;최초등록">
       <option name="closed" value="true" />
@@ -198,7 +203,31 @@
       <option name="project" value="LOCAL" />
       <updated>1741306339014</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="2025.3.7&#10;second">
+      <option name="closed" value="true" />
+      <created>1741307005189</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1741307005189</updated>
+    </task>
+    <task id="LOCAL-00005" summary="2025.3.7&#10;test3">
+      <option name="closed" value="true" />
+      <created>1741308147593</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1741308147593</updated>
+    </task>
+    <task id="LOCAL-00006" summary="2025.3.7&#10;test3">
+      <option name="closed" value="true" />
+      <created>1741308223602</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1741308223602</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,6 +237,7 @@
     <MESSAGE value="2025.3.6&#10;최초등록" />
     <MESSAGE value="2025.3.6&#10;second page 수정" />
     <MESSAGE value="2025.3.7&#10;second" />
-    <option name="LAST_COMMIT_MESSAGE" value="2025.3.7&#10;second" />
+    <MESSAGE value="2025.3.7&#10;test3" />
+    <option name="LAST_COMMIT_MESSAGE" value="2025.3.7&#10;test3" />
   </component>
 </project>
