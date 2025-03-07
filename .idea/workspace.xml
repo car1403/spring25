@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b991fd35-e78c-4f07-aeca-087106655e3e" name="Changes" comment="2025.3.7&#10;TEST2">
-      <change afterPath="$PROJECT_DIR$/day02/src/main/java/com/mc/dto/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day02/src/main/java/com/mc/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/day02/src/main/java/com/mc/controller/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day02/src/main/webapp/WEB-INF/views/next.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day02/src/main/webapp/WEB-INF/views/next.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -327,7 +325,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741321947142</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="2025.3.7&#10;TEST2">
+      <option name="closed" value="true" />
+      <created>1741323112038</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1741323112038</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

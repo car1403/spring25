@@ -5,12 +5,47 @@
 <html>
 <head>
     <title>Title</title>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
 </head>
 <body>
     <h1>Next Page</h1>
-    <c:forEach var="it" items="${myitems}">
-        <h4>${it.name} ${it.price}</h4>
-    </c:forEach>
+    <table>
+        <thead>
+        <tr>
+            <th>Image</th>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Price</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <c:forEach var="it" items="${myitems}">
+            <tr>
+                <td>${it.imgName}</td>
+                <td>${it.id}</td>
+                <td>${it.name}</td>
+                <td>${it.price}</td>
+            </tr>
+        </c:forEach>
+        </tbody>
+    </table>
 </body>
 </html>
 
