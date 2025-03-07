@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b991fd35-e78c-4f07-aeca-087106655e3e" name="Changes" comment="2025.3.6&#10;second page 수정">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b991fd35-e78c-4f07-aeca-087106655e3e" name="Changes" comment="2025.3.7&#10;second" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,6 +55,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -171,7 +172,7 @@
       <option name="presentableId" value="Default" />
       <updated>1741241184581</updated>
       <workItem from="1741241185623" duration="6021000" />
-      <workItem from="1741249375310" duration="1996000" />
+      <workItem from="1741249375310" duration="2473000" />
     </task>
     <task id="LOCAL-00001" summary="2025.3.6&#10;최초등록">
       <option name="closed" value="true" />
@@ -189,7 +190,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741246786203</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="2025.3.7&#10;second">
+      <option name="closed" value="true" />
+      <created>1741306339014</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1741306339014</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +207,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2025.3.6&#10;최초등록" />
     <MESSAGE value="2025.3.6&#10;second page 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="2025.3.6&#10;second page 수정" />
+    <MESSAGE value="2025.3.7&#10;second" />
+    <option name="LAST_COMMIT_MESSAGE" value="2025.3.7&#10;second" />
   </component>
 </project>
