@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b991fd35-e78c-4f07-aeca-087106655e3e" name="Changes" comment="2025.3.7&#10;TEST2">
-      <change afterPath="$PROJECT_DIR$/day02/src/main/resources/static/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day02/src/main/resources/static/img/p1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day02/src/main/resources/static/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day02/src/main/java/com/mc/dto/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day02/src/main/java/com/mc/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/day02/src/main/java/com/mc/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day02/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day02/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day02/src/main/webapp/WEB-INF/views/next.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day02/src/main/webapp/WEB-INF/views/next.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,10 +60,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
-        <option value="Jsp File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -92,6 +89,7 @@
     "Gradle.Build day01.executor": "Run",
     "Gradle.Day01ApplicationTests.executor": "Run",
     "Gradle.Day02ApplicationTests.executor": "Run",
+    "Gradle.Download Sources.executor": "Run",
     "Gradle.day01 [bootRun].executor": "Run",
     "Gradle.day02 [bootRun].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
@@ -321,7 +319,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741310549146</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="2025.3.7&#10;TEST2">
+      <option name="closed" value="true" />
+      <created>1741321947142</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1741321947142</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
