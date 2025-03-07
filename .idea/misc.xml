@@ -4,6 +4,8 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/day01" />
     <file type="web" url="file://$PROJECT_DIR$/day02" />
+    <file type="web" url="file://$PROJECT_DIR$/day02ws1" />
+    <file type="web" url="file://$PROJECT_DIR$/day02ws2" />
   </component>
   <component name="ProjectRootManager">
     <output url="file://$PROJECT_DIR$/out" />

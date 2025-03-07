@@ -1,0 +1,19 @@
+# 1. Server Config
+server:
+  port: 80
+  servlet:
+    encoding:
+      charset: UTF-8
+      force: true
+
+# 2. Spring Config
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+
+# 3. Log Level
+logging:
+  level:
+    root: info   #  error < info < debug
