@@ -121,7 +121,7 @@
     </div>
 </div>
 
-<div class="jumbotron text-center" style="margin-bottom:0">
+<div class="text-center" style="margin-bottom:0;height:30px;background: #aaaaaa">
     <p>Footer</p>
 </div>
 
