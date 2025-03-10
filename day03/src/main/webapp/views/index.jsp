@@ -16,10 +16,7 @@
     <style>
         .fakeimg {
             height: 200px;
-            background: #aaa;
-        }
-        .fakeimg {
-            height: 200px;
+            width:300px;
             background: #aaa;
         }
         #scroll-btn {
@@ -71,13 +68,13 @@
 </div>
 <ul class="nav justify-content-end">
     <li class="nav-item">
-        <a class="nav-link" href="#">Login</a>
+        <a class="nav-link" href="<c:url value="/login"/> ">Login</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#">Register</a>
+        <a class="nav-link" href="<c:url value="/register"/> ">Register</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#">About us</a>
+        <a class="nav-link" href="<c:url value="/about"/> ">About us</a>
     </li>
 </ul>
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
