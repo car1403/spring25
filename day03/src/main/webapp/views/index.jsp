@@ -100,7 +100,7 @@
     </div>
 </nav>
 
-<div class="container" style="margin-top:30px">
+<div class="container" style="margin-top:30px;margin-bottom:30px">
     <div class="row">
         <c:choose>
             <c:when test="${left == null}">
