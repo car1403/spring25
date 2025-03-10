@@ -85,7 +85,7 @@
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="#">JS</a>
+                <a class="nav-link" href="<c:url value="/js"/> ">JS</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">AJAX</a>
