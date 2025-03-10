@@ -16,4 +16,16 @@ public class MainController {
         model.addAttribute("center","login");
         return "index";
     }
+
+    @RequestMapping("/register")
+    public String register(Model model){
+        model.addAttribute("center","register");
+        return "index";
+    }
+
+    @RequestMapping("/about")
+    public String about(Model model){
+        model.addAttribute("center","about");
+        return "index";
+    }
 }

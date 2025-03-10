@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b991fd35-e78c-4f07-aeca-087106655e3e" name="Changes" comment="2025.3.10">
-      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/about.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/register.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day03/src/main/java/com/mc/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03/src/main/webapp/views/center.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/center.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03/src/main/webapp/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +121,7 @@
     "Spring Boot.Day01Application.executor": "Run",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/spring25/day03/src/main/resources",
+    "last_opened_file_path": "D:/spring25/day03/src/main/webapp/views",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -135,11 +134,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\spring25\day03\src\main\webapp\views" />
       <recent name="D:\spring25\day03\src\main\resources" />
       <recent name="D:\spring25\day02ws2\src\main\resources\static" />
       <recent name="D:\spring25\day02ws2\src\main\java\com\mc" />
       <recent name="D:\spring25\day02ws1\src\main\java\com\mc" />
-      <recent name="D:\spring25\day02ws2\src\main" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\spring25\day02ws1\src\main\resources\static\img" />
@@ -328,7 +327,7 @@
       <workItem from="1741249375310" duration="4200000" />
       <workItem from="1741325588967" duration="1940000" />
       <workItem from="1741327695065" duration="5335000" />
-      <workItem from="1741563233909" duration="5761000" />
+      <workItem from="1741563233909" duration="6870000" />
     </task>
     <task id="LOCAL-00001" summary="2025.3.6&#10;최초등록">
       <option name="closed" value="true" />
@@ -466,7 +465,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741569539849</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="2025.3.10">
+      <option name="closed" value="true" />
+      <created>1741571158180</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1741571158180</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
