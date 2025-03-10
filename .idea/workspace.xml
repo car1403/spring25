@@ -5,11 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b991fd35-e78c-4f07-aeca-087106655e3e" name="Changes" comment="2025.3.10">
-      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/js/js1.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/js/js2.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/js/js3.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03/src/main/java/com/mc/controller/JSController.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/controller/JSController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03/src/main/webapp/views/js/left.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/js/left.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/controller/AJAXController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/controller/ChartController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/controller/MapController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/ajax/ajax1.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/ajax/ajax2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/ajax/ajax3.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/ajax/center.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/ajax/left.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/chart/center.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/chart/chart1.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/chart/chart2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/chart/chart3.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/chart/left.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/map/center.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/map/js1.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/map/js2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/map/js3.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/map/left.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/src/main/webapp/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +136,7 @@
     "Spring Boot.Day01Application.executor": "Run",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/spring25/day03/src/main/webapp/views/js",
+    "last_opened_file_path": "D:/spring25/day03/src/main/webapp/views",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -135,14 +149,17 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\spring25\day03\src\main\webapp\views\js" />
       <recent name="D:\spring25\day03\src\main\webapp\views" />
+      <recent name="D:\spring25\day03\src\main\webapp\views\js" />
       <recent name="D:\spring25\day03\src\main\resources" />
       <recent name="D:\spring25\day02ws2\src\main\resources\static" />
       <recent name="D:\spring25\day02ws2\src\main\java\com\mc" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\spring25\day02ws1\src\main\resources\static\img" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mc.controller" />
     </key>
   </component>
   <component name="RunManager" selected="Gradle.day03 [bootRun]">
@@ -328,7 +345,7 @@
       <workItem from="1741249375310" duration="4200000" />
       <workItem from="1741325588967" duration="1940000" />
       <workItem from="1741327695065" duration="5335000" />
-      <workItem from="1741563233909" duration="11943000" />
+      <workItem from="1741563233909" duration="12570000" />
     </task>
     <task id="LOCAL-00001" summary="2025.3.6&#10;최초등록">
       <option name="closed" value="true" />
@@ -514,7 +531,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741580532228</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="2025.3.10">
+      <option name="closed" value="true" />
+      <created>1741580951191</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1741580951191</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

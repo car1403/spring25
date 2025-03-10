@@ -88,13 +88,13 @@
                 <a class="nav-link" href="<c:url value="/js"/> ">JS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">AJAX</a>
+                <a class="nav-link" href="<c:url value="/ajax"/>">AJAX</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Map</a>
+                <a class="nav-link" href="<c:url value="/map"/>">Map</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Chart</a>
+                <a class="nav-link" href="<c:url value="/chart"/>">Chart</a>
             </li>
         </ul>
     </div>
