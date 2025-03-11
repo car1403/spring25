@@ -5,25 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b991fd35-e78c-4f07-aeca-087106655e3e" name="Changes" comment="2025.3.10">
-      <change afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/controller/AJAXController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/controller/ChartController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/controller/MapController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/ajax/ajax1.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/ajax/ajax2.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/ajax/ajax3.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/ajax/center.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/ajax/left.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/chart/center.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/chart/chart1.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/chart/chart2.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/chart/chart3.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/chart/left.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/map/center.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/map/js1.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/map/js2.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/map/js3.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/map/left.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03/src/main/webapp/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,36 +99,36 @@
     <option name="flattenModules" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build day01.executor": "Run",
-    "Gradle.Day01ApplicationTests.executor": "Run",
-    "Gradle.Day02ApplicationTests.executor": "Run",
-    "Gradle.Download Sources.executor": "Run",
-    "Gradle.day01 [bootRun].executor": "Run",
-    "Gradle.day02 [bootRun].executor": "Run",
-    "Gradle.day02ws1 [bootRun].executor": "Run",
-    "Gradle.day02ws2 [bootRun].executor": "Run",
-    "Gradle.day03 [bootRun].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.Day01Application.executor": "Run",
-    "jdk.selected.JAVA_MODULE": "17",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/spring25/day03/src/main/webapp/views",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "fileTemplates",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build day01.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Day01ApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Day02ApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.day01 [bootRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.day02 [bootRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.day02ws1 [bootRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.day02ws2 [bootRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.day03 [bootRun].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.Day01Application.executor&quot;: &quot;Run&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/spring25/day03/src/main/webapp/views&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\spring25\day03\src\main\webapp\views" />
@@ -345,7 +327,8 @@
       <workItem from="1741249375310" duration="4200000" />
       <workItem from="1741325588967" duration="1940000" />
       <workItem from="1741327695065" duration="5335000" />
-      <workItem from="1741563233909" duration="12570000" />
+      <workItem from="1741563233909" duration="15224000" />
+      <workItem from="1741649762281" duration="1011000" />
     </task>
     <task id="LOCAL-00001" summary="2025.3.6&#10;최초등록">
       <option name="closed" value="true" />
@@ -539,7 +522,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741580951191</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="2025.3.10">
+      <option name="closed" value="true" />
+      <created>1741581566659</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1741581566659</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
