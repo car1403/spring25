@@ -88,6 +88,9 @@
                 <a class="nav-link" href="<c:url value="/js"/> ">JS</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="<c:url value="/jq"/> ">JQ</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="<c:url value="/ajax"/>">AJAX</a>
             </li>
             <li class="nav-item">
