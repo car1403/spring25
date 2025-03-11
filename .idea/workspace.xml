@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b991fd35-e78c-4f07-aeca-087106655e3e" name="Changes" comment="2025.3.11">
-      <change afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/controller/JQController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/jq/center.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/jq/jq1.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/jq/jq2.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/jq/jq3.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/jq/left.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03/src/main/webapp/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/src/main/webapp/views/jq/jq1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/jq/jq1.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/src/main/webapp/views/jq/jq2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/jq/jq2.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -335,7 +330,7 @@
       <workItem from="1741325588967" duration="1940000" />
       <workItem from="1741327695065" duration="5335000" />
       <workItem from="1741563233909" duration="15224000" />
-      <workItem from="1741649762281" duration="16870000" />
+      <workItem from="1741649762281" duration="19507000" />
     </task>
     <task id="LOCAL-00001" summary="2025.3.6&#10;최초등록">
       <option name="closed" value="true" />
@@ -593,7 +588,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741674336000</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="2025.3.11">
+      <option name="closed" value="true" />
+      <created>1741675914138</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1741675914138</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
