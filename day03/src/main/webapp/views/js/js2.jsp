@@ -14,11 +14,11 @@
         },
         getData:function(){
             const data = [
-                {rank:1, title:'미국주식', updown:'up'},
-                {rank:2, title:'날씨', updown:'up'},
-                {rank:3, title:'미세먼지', updown:'down'},
-                {rank:4, title:'봄', updown:'up'},
-                {rank:5, title:'점심식사', updown:'down'}
+                {rank:Math.floor(Math.random()*10), title:'미국주식', updown:'up'},
+                {rank:Math.floor(Math.random()*10), title:'날씨', updown:'up'},
+                {rank:Math.floor(Math.random()*10), title:'미세먼지', updown:'down'},
+                {rank:Math.floor(Math.random()*10), title:'봄', updown:'up'},
+                {rank:Math.floor(Math.random()*10), title:'점심식사', updown:'down'}
             ];
 
             this.display(data);
@@ -41,6 +41,9 @@
 
     window.onload = function(){
         js2.init();
+        setInterval(function(){
+            js2.init();
+        },5000);
     }
 </script>
 

@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b991fd35-e78c-4f07-aeca-087106655e3e" name="Changes" comment="2025.3.10">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03/src/main/webapp/views/js/center.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/js/center.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03/src/main/webapp/views/js/js1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/js/js1.jsp" afterDir="false" />
+    <list default="true" id="b991fd35-e78c-4f07-aeca-087106655e3e" name="Changes" comment="2025.3.11">
       <change beforePath="$PROJECT_DIR$/day03/src/main/webapp/views/js/js2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/js/js2.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -331,7 +328,7 @@
       <workItem from="1741325588967" duration="1940000" />
       <workItem from="1741327695065" duration="5335000" />
       <workItem from="1741563233909" duration="15224000" />
-      <workItem from="1741649762281" duration="6261000" />
+      <workItem from="1741649762281" duration="6633000" />
     </task>
     <task id="LOCAL-00001" summary="2025.3.6&#10;최초등록">
       <option name="closed" value="true" />
@@ -541,7 +538,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741651669426</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="2025.3.11">
+      <option name="closed" value="true" />
+      <created>1741660717047</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1741660717047</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -565,7 +570,8 @@
     <MESSAGE value="2025.3.7&#10;test3" />
     <MESSAGE value="2025.3.7&#10;TEST2" />
     <MESSAGE value="2025.3.10" />
-    <option name="LAST_COMMIT_MESSAGE" value="2025.3.10" />
+    <MESSAGE value="2025.3.11" />
+    <option name="LAST_COMMIT_MESSAGE" value="2025.3.11" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
