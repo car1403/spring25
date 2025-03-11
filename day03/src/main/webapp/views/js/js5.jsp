@@ -3,23 +3,31 @@
 <%--Center Page--%>
 
 <script>
-function clickBtn(){
-    alert('click button');
-}
-window.onload = function(){
-    let aclick = document.querySelector('#aclick');
-    aclick.onclick = function(){
-        let c = confirm('이동하시겠습니까?');
-        if(c){
-            location.href = 'http://www.naver.com';
+    const js5 = {
+        init:function(){
+            let aclick = document.querySelector('#aclick');
+            aclick.onclick = function(){
+                let email = document.querySelector('#email_data').innerText;
+
+                let id = email.substring(0,5);
+                document.querySelector('#txt_id').innerHTML = id;
+
+                let domain = email.substring(email.indexOf('@')+1, email.indexOf('.') )
+                document.querySelector('#txt_domain').innerHTML = domain;
+
+            }
         }
     }
-}
+    window.onload = function(){
+        js5.init();
+    }
 </script>
 
 <div class="col-sm-10">
-    <h2>JS3 Page</h2>
-    <h5>Title description, Sep 2, 2025</h5>
-    <button id="btn" onclick="clickBtn()">Button</button>
-    <a href="#" id="aclick">Click</a>
+    <h2>JS5 Page</h2>
+    <button type="button" class="btn btn-primary" id="aclick">Button</button>
+    <h4 id="email_data">jmlee@tonesol.com</h4>
+    <h5 id="txt_id"></h5>  <!-- jmlee -->
+    <h5 id="txt_domain"></h5> <!-- tonesol -->
+
 </div>
