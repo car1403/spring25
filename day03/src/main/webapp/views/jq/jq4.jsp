@@ -1,9 +1,29 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--Center Page--%>
+<style>
+    .input_bg{
+        background: aliceblue !important;
+    }
+</style>
 <script>
     const jq4 = {
         init:function(){
+
+            $('#id').focus(function(){
+                $(this).addClass('input_bg');
+            });
+            $('#pwd').focus(function(){
+                $(this).addClass('input_bg');
+            });
+
+            $('#id').blur(function(){
+                $(this).removeClass('input_bg');
+            });
+            $('#pwd').blur(function(){
+                $(this).removeClass('input_bg');
+            });
+
             $('#login_btn').click(()=>{
                 this.check();
             });

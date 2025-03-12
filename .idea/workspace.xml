@@ -8,6 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day03/src/main/java/com/mc/controller/JQController.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/controller/JQController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day03/src/main/webapp/views/jq/jq4.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/jq/jq4.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/src/main/webapp/views/jq/jq5.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/jq/jq5.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -334,7 +335,7 @@
       <workItem from="1741327695065" duration="5335000" />
       <workItem from="1741563233909" duration="15224000" />
       <workItem from="1741649762281" duration="21046000" />
-      <workItem from="1741736228208" duration="12835000" />
+      <workItem from="1741736228208" duration="15885000" />
     </task>
     <task id="LOCAL-00001" summary="2025.3.6&#10;최초등록">
       <option name="closed" value="true" />
@@ -624,7 +625,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741747480420</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="2025.3.12">
+      <option name="closed" value="true" />
+      <created>1741755125874</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1741755125874</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

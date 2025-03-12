@@ -59,8 +59,18 @@ public class JQController {
     public String loginimpl(Model model,
                             @RequestParam("id") String id,
                             @RequestParam("pwd") String pwd){
-        log.info("ID: "+id+" PWD: "+pwd);
+        log.info("   ID:"+id+" PWD:  "+pwd);
         model.addAttribute("center",dir+"jq4");
+        model.addAttribute("left",dir+"left");
+        return "index";
+    }
+    @RequestMapping("/registerimpl")
+    public String registerimpl(Model model,
+                            @RequestParam("id") String id,
+                            @RequestParam("pwd") String pwd,
+                            @RequestParam("name") String name){
+        log.info("   ID:"+id+" PWD:  "+pwd+" NAME:  "+name);
+        model.addAttribute("center",dir+"jq5");
         model.addAttribute("left",dir+"left");
         return "index";
     }
