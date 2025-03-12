@@ -1,11 +1,14 @@
 package com.mc.controller;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 @RequestMapping("/jq")
+@Slf4j
 public class JQController {
 
     String dir = "jq/";
@@ -49,6 +52,15 @@ public class JQController {
     @RequestMapping("/jq6")
     public String jq6(Model model){
         model.addAttribute("center",dir+"jq6");
+        model.addAttribute("left",dir+"left");
+        return "index";
+    }
+    @RequestMapping("/loginimpl")
+    public String loginimpl(Model model,
+                            @RequestParam("id") String id,
+                            @RequestParam("pwd") String pwd){
+        log.info("ID: "+id+" PWD: "+pwd);
+        model.addAttribute("center",dir+"jq4");
         model.addAttribute("left",dir+"left");
         return "index";
     }
