@@ -12,27 +12,19 @@
     <table class="table">
         <thead class="thead-light">
         <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Email</th>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Date</th>
         </tr>
         </thead>
         <tbody>
-        <tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td>john@example.com</td>
-        </tr>
-        <tr>
-            <td>Mary</td>
-            <td>Moe</td>
-            <td>mary@example.com</td>
-        </tr>
-        <tr>
-            <td>July</td>
-            <td>Dooley</td>
-            <td>july@example.com</td>
-        </tr>
+        <c:forEach var="b" items="${boards}">
+            <tr>
+                <td>${b.id}</td>
+                <td>${b.title}</td>
+                <td>${b.date}</td>
+            </tr>
+        </c:forEach>
         </tbody>
     </table>
 </div>

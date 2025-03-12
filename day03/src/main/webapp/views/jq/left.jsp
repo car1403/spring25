@@ -14,6 +14,15 @@
         <li class="nav-item">
             <a class="nav-link" href="<c:url value="/jq/jq3"/>">jq3</a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link" href="<c:url value="/jq/jq4"/>">jq4</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="<c:url value="/jq/jq5"/>">jq5</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="<c:url value="/jq/jq6"/>">jq6</a>
+        </li>
     </ul>
     <hr class="d-sm-none">
 </div>

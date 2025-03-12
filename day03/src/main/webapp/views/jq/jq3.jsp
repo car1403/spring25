@@ -9,7 +9,39 @@
     }
 </style>
 <script>
-
+    const jq3 = {
+        init:function(){
+            $('#append').click(()=>{
+                $('#result').append(`
+                      <div class="card bg-primary text-white">
+                        <div class="card-body">Append card</div>
+                      </div>
+                `);
+            });
+            $('#prepend').click(()=>{
+                $('#result').prepend(`
+                      <div class="card bg-danger text-white">
+                        <div class="card-body">Prepend card</div>
+                      </div>
+                `);
+            });
+            $('#after').click(()=>{
+                $('#result').after('<h4>After....</h4>');
+            });
+            $('#before').click(()=>{
+                $('#result').before('<h4>Before....</h4>');
+            });
+            $('#remove').click(()=>{
+                $('#result').fadeToggle();
+            });
+            $('#empty').click(()=>{
+                $('#result').empty();
+            });
+        }
+    }
+    $(function(){
+        jq3.init();
+    });
 </script>
 
 <div class="col-sm-10">

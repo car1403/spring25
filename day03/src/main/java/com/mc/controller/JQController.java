@@ -34,5 +34,23 @@ public class JQController {
         model.addAttribute("left",dir+"left");
         return "index";
     }
+    @RequestMapping("/jq4")
+    public String jq4(Model model){
+        model.addAttribute("center",dir+"jq4");
+        model.addAttribute("left",dir+"left");
+        return "index";
+    }
+    @RequestMapping("/jq5")
+    public String jq5(Model model){
+        model.addAttribute("center",dir+"jq5");
+        model.addAttribute("left",dir+"left");
+        return "index";
+    }
+    @RequestMapping("/jq6")
+    public String jq6(Model model){
+        model.addAttribute("center",dir+"jq6");
+        model.addAttribute("left",dir+"left");
+        return "index";
+    }
 
 }
