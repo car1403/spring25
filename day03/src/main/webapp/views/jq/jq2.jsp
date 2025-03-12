@@ -33,21 +33,34 @@
         display:function(data){
             let result = '';
             $(data).each((index,item)=>{
-                result += '<h4>';
-                result += item.rank+' '+item.title+' '+item.updown;
-                result += '</h4>';
+                result += '<tr>';
+                result += '<td>'+item.rank+'</td>';
+                result += '<td>'+item.title+'</td>';
+                result += '<td>'+item.updown+'</td>';
+                result += '</tr>';
             });
-            $('#result').html(result);
+            $('#rank > tbody').html(result);
         }
     }
 
-    window.onload = function(){
+    $().ready(()=>{
         jq2.init();
-    }
+    });
 </script>
 
 <div class="col-sm-10">
     <h2>JQ2 Page</h2>
     <button type="button" class="btn btn-primary" id="aclick">GET DATA</button>
-    <div id="result"></div>
+    <table id="rank" class="table">
+        <thead class="thead-light">
+        <tr>
+            <th>rank</th>
+            <th>title</th>
+            <th>updown</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
 </div>
