@@ -23,13 +23,16 @@
                 error:()=>{}
             });
         },
-        display:function(result){
-            // [
-            // {hi:16, low:3, location:'seoul',day:'mon'},
-            // {hi:16, low:3, location:'seoul',day:'mon'},
-            // {hi:16, low:3, location:'seoul',day:'mon'}
-            // ]
-
+        display:function(data){
+            let result = '';
+            $(data).each((index,item)=>{
+                result += '<tr>';
+                result += '<td>'+item.day+'</td>';
+                result += '<td>'+item.hi+'</td>';
+                result += '<td>'+item.low+'</td>';
+                result += '</tr>';
+            });
+            $('#wts > tbody').html(result);
         }
     }
     $(function(){
@@ -41,5 +44,16 @@
     <h2>AJAX2 Page</h2>
     <h5>Title description, Sep 2, 2025</h5>
     <button id="get_btn">Get Weather</button>
-    <div id="result"></div>
+    <table id="wts" class="table">
+        <thead class="thead-light">
+        <tr>
+            <th>Day</th>
+            <th>Hi</th>
+            <th>Low</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
 </div>
