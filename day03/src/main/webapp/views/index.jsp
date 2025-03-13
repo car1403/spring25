@@ -8,10 +8,13 @@
     <title>Bootstrap 4 Website Example</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%-- Bootstrap Library   --%>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <%-- KaKao Map Library   --%>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a2f29f93dc4c0e209e8a6da86a3e488d"></script>
 
     <style>
         .fakeimg {
