@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Random;
 
 @RestController
 @Slf4j
@@ -39,6 +40,29 @@ public class AjaxRestController {
             jsonObject.put("hi",i);
             jsonObject.put("low",i);
             jsonObject.put("day",i);
+            jsonArray.add(jsonObject);
+        }
+        return jsonArray;
+    }
+
+    @RequestMapping("/rank")
+    public Object rank(){
+        // JSON Array 만들어서 전송
+        // {hi:16, low:3, location:'seoul'}
+        JSONArray jsonArray = new JSONArray();
+        Random random = new Random();
+
+        String titles [] = {
+                "테슬라","NVIDA","삼성전자","배터리폭발","공군오폭"
+        };
+
+        for(int i=0;i<5;i++){
+            int updown = random.nextInt(2);
+            int rank = random.nextInt(20)+1;
+            JSONObject jsonObject = new JSONObject();
+            jsonObject.put("title",titles[i]);
+            jsonObject.put("rank",rank);
+            jsonObject.put("updown",updown);
             jsonArray.add(jsonObject);
         }
         return jsonArray;
