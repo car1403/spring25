@@ -33,6 +33,26 @@
             $('#register_btn').click(()=>{
                 this.check();
             });
+
+            $('#id').keyup(()=>{
+                let id = $('#id').val();
+                if(id.length >= 4){
+                    $('#msg').text(id);
+                    this.checkId(id);
+                }
+
+            });
+        },
+        checkId:function(id){
+            $.ajax({
+                url:'<c:url value="/checkid"/>',
+                data:{cid:id},
+                success:(result)=>{
+                    //alert(result);
+                    result ? $('#msg').text('OK') : $('#msg').text('NO!');
+                },
+                error:()=>{}
+            });
         },
         check:function(){
             let id = $('#id').val();

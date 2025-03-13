@@ -12,7 +12,7 @@
             this.getData();
             setInterval(()=>{
                 this.getData();
-            },5000);
+            },10000);
         },
         getData:function(){
             $.ajax({
