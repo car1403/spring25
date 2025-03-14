@@ -8,9 +8,9 @@
         border: 2px solid red;
     }
     #content{
-        margin-top: 100px;
+        margin-top: 83px;
         width:auto;
-        height:250px;
+        height:300px;
         border: 2px solid red;
         overflow: auto;
     }
@@ -127,7 +127,10 @@
 
                 // Make Content List
                 result += '<p>';
-                result += item.title;
+                result += '<a href="<c:url value="/map/go?target='+item.target+'"/>">';
+                result += '<img width="20px" src="<c:url value="/img/'+item.img+'"/> ">';
+                result += item.target+' '+item.title;
+                result += '</a>';
                 result += '</p>';
             });
 

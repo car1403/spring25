@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b991fd35-e78c-4f07-aeca-087106655e3e" name="Changes" comment="2025.3.13">
-      <change afterPath="$PROJECT_DIR$/day03/src/main/resources/static/img/ss1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03/src/main/resources/static/img/ss2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03/src/main/resources/static/img/ss3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03/src/main/resources/static/img/ss4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03/src/main/resources/static/img/ss5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03/src/main/webapp/views/map/map1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/map/map1.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/m.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/s1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/s2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/s3.jpg" beforeDir="false" />
-    </list>
+    <list default="true" id="b991fd35-e78c-4f07-aeca-087106655e3e" name="Changes" comment="2025.3.13" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -705,7 +693,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741918956449</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="2025.3.13">
+      <option name="closed" value="true" />
+      <created>1741926693457</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1741926693457</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
