@@ -8,7 +8,7 @@
         border: 2px solid red;
     }
     #content{
-        margin-top: 83px;
+        margin-top: 120px;
         width:auto;
         height:300px;
         border: 2px solid red;
