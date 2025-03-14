@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b991fd35-e78c-4f07-aeca-087106655e3e" name="Changes" comment="2025.3.12">
+      <change afterPath="$PROJECT_DIR$/day03/src/main/resources/static/img/m.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/src/main/resources/static/img/s1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/src/main/resources/static/img/s2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/src/main/resources/static/img/s3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/map/go.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03/src/main/webapp/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03/src/main/webapp/views/map/center.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/map/center.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03/src/main/webapp/views/map/js1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/map/map1.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03/src/main/webapp/views/map/js2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/map/map2.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03/src/main/webapp/views/map/js3.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/map/map3.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/src/main/java/com/mc/controller/MapController.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/controller/MapController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/src/main/webapp/views/map/map1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/map/map1.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,10 +142,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\spring25\day03\src\main\resources\static\img" />
+      <recent name="D:\spring25\day03\src\main\webapp\views\map" />
       <recent name="D:\spring25\day03\src\main\webapp\views\jq" />
       <recent name="D:\spring25\day03\src\main\webapp\views" />
       <recent name="D:\spring25\day03\src\main\webapp\views\js" />
-      <recent name="D:\spring25\day03\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\spring25\day02ws1\src\main\resources\static\img" />
@@ -676,7 +678,23 @@
       <option name="project" value="LOCAL" />
       <updated>1741846047922</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="2025.3.12">
+      <option name="closed" value="true" />
+      <created>1741850062513</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1741850062513</updated>
+    </task>
+    <task id="LOCAL-00044" summary="2025.3.12">
+      <option name="closed" value="true" />
+      <created>1741850076713</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1741850076714</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

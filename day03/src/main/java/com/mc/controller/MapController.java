@@ -3,12 +3,23 @@ package com.mc.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 @RequestMapping("/map")
 public class MapController {
 
     String dir = "map/";
+
+    // /map/go
+    @RequestMapping("/go")
+    public String go(@RequestParam("target") int target, Model model){
+
+        model.addAttribute("target", target);
+        model.addAttribute("center",dir+"go");
+        model.addAttribute("left",dir+"left");
+        return "index";
+    }
 
     @RequestMapping("")
     public String main(Model model){
