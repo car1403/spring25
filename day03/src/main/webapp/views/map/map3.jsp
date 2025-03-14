@@ -42,8 +42,8 @@
                 this.makeMap(33.254564, 126.560944);
             });
             $('#bank_btn').click(()=>{
-                this.showMarkers(null);
-                this.markers = [];
+                this.showMarkers(null); // 마커 지우기
+                this.markers = []; // 배열에 마커들 모두 지우기
                 this.type = 10;
                 this.getData()
             });
