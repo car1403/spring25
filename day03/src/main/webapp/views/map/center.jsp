@@ -11,8 +11,15 @@
 </style>
 <script>
     let mapCenter = {
+        merker:null,
+        map:null,
         init:function(){
             this.displayMap();
+
+            setInterval(()=>{
+                this.getData();
+            },3000);
+
         },
         displayMap:function(){
             var mapContainer = document.getElementById('map');
@@ -20,12 +27,35 @@
                     center: new kakao.maps.LatLng(37.501634, 127.039886),
                     level: 3
                 };
-            var map = new kakao.maps.Map(mapContainer, mapOption);
+            this.map = new kakao.maps.Map(mapContainer, mapOption);
 
             var mapTypeControl = new kakao.maps.MapTypeControl();
-            map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
+            this.map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
             var zoomControl = new kakao.maps.ZoomControl();
-            map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+            this.map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+
+        },
+        getData:function(){
+            $.ajax({
+                url:'/getlatlng',
+                success:(result)=>{
+                    //alert(result.lat);
+                    this.showMarker(result);
+                }
+            });
+        },
+        showMarker:function(result){
+           // var moveLatLon = new kakao.maps.LatLng(result.lat, result.lng);
+           // this.map.panTo(moveLatLon);
+            if(this.marker != null){
+                this.marker.setMap(null);
+            }
+            console.log(`%f, %f`,result.lat, result.lng)
+            var markerPosition  = new kakao.maps.LatLng(result.lat, result.lng);
+            this.marker = new kakao.maps.Marker({
+                position: markerPosition
+            });
+            this.marker.setMap(this.map);
         }
     }
     $(function(){

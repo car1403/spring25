@@ -17,7 +17,16 @@ import java.util.Random;
 @RestController
 @Slf4j
 public class AjaxMapController {
-
+    @RequestMapping("/getlatlng")
+    public Object getlatlng(){
+        JSONObject obj = new JSONObject();
+        Random r = new Random();
+        double lat = 37.501634 +r.nextDouble(0.005);
+        double lng = 127.039886 +r.nextDouble(0.001);
+        obj.put("lat", lat);
+        obj.put("lng", lng);
+        return obj;
+    }
     @RequestMapping("/getcontent")
     public Object getcontent(@RequestParam("target") int target){
         List<Content> contents = new ArrayList<>();
