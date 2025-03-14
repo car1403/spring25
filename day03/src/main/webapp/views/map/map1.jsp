@@ -84,7 +84,12 @@
                     {lat:37.566472, lng:126.971841, title:'순대국7', img:'ss7.jpg', target:107}
                 ];
             }else if(target == 200){
-
+                datas = [
+                    {lat:35.176109, lng:129.165474, title:'순대국1', img:'ss1.jpg', target:201},
+                    {lat:35.171109, lng:129.174474, title:'순대국2', img:'ss2.jpg', target:202},
+                    {lat:35.179109, lng:129.172474, title:'순대국3', img:'ss3.jpg', target:203},
+                    {lat:35.173109, lng:129.166474, title:'순대국4', img:'ss4.jpg', target:204}
+                ];
             }
 
             // 배열을 돌려서 (each)
