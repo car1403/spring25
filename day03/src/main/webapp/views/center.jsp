@@ -11,7 +11,8 @@
             $.ajax({
                 url:'<c:url value="/getwh"/>',
                 success:(result)=>{
-                    this.display(result);
+                    alert(result);
+                    //this.display(result);
                 }
             });
         },

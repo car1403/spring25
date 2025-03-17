@@ -1,12 +1,15 @@
 package com.mc.controllerrest;
 
+import com.mc.util.WeatherUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
+import org.json.simple.parser.ParseException;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Random;
@@ -24,11 +27,11 @@ public class AjaxRestController {
         return result;
     }
     @RequestMapping("/getwh")
-    public Object getwh(){
-        JSONObject obj = new JSONObject();
-        //{weather:'오늘의 날씨는 추워'}
-        obj.put("weather", "오늘의 날씨는 추워");
-        return obj;
+    public Object getwh() throws IOException, ParseException {
+        String key = "C2YXvxKurZ%2FmXrbnFlyub5B89GCCWUmYncj4wvNqlWzyP0IwmeP%2FAVl1mU3Tz7Kzk8mfT3f6Wm2wJJ9Z6yNjgw%3D%3D";
+        String loc = "108";
+        Object result = WeatherUtil.getWeather(loc,key);
+        return result;
     }
     @RequestMapping("/gettime")
     public Object gettime(){
