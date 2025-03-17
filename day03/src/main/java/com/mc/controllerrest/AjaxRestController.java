@@ -38,9 +38,19 @@ public class AjaxRestController {
         Object result = WeatherUtil.getWeather(loc,wkey);
         return result;
     }
+    @RequestMapping("/getcwh")
+    public Object getcwh(@RequestParam("loc") String loc) throws IOException, ParseException {
+        Object result = WeatherUtil.getWeather(loc,wkey);
+        return result;
+    }
     @RequestMapping("/getwh2")
     public Object getwh2() throws IOException, ParseException {
         String loc = "1835848";
+        Object result = WeatherUtil.getWeather2(loc,wkey2);
+        return result;
+    }
+    @RequestMapping("/getcwh2")
+    public Object getcwh2(@RequestParam("loc") String loc) throws IOException, ParseException {
         Object result = WeatherUtil.getWeather2(loc,wkey2);
         return result;
     }

@@ -14,6 +14,9 @@
         <li class="nav-item">
             <a class="nav-link" href="<c:url value="/link3"/>">Link3</a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link" href="<c:url value="/link4"/>">Link4</a>
+        </li>
     </ul>
     <hr class="d-sm-none">
 </div>
