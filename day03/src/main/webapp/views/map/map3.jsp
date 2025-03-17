@@ -151,7 +151,7 @@
             <h2>Map3 Page</h2>
             <button id="sbtn" class="btn btn-primary">서울</button>
             <button id="bbtn" class="btn btn-primary">부산</button>
-            <button id="jbtn" class="btn btn-primary">대전</button>
+            <button id="jbtn" class="btn btn-primary">제주</button>
             <br>
             <button id="bank_btn" class="btn btn-danger">은행</button>
             <button id="shop_btn" class="btn btn-danger">식당</button>

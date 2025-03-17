@@ -23,7 +23,13 @@ public class AjaxRestController {
         }
         return result;
     }
-
+    @RequestMapping("/getwh")
+    public Object getwh(){
+        JSONObject obj = new JSONObject();
+        //{weather:'오늘의 날씨는 추워'}
+        obj.put("weather", "오늘의 날씨는 추워");
+        return obj;
+    }
     @RequestMapping("/gettime")
     public Object gettime(){
         LocalDateTime now = LocalDateTime.now();

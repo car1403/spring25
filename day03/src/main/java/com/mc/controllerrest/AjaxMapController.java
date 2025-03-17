@@ -25,6 +25,7 @@ public class AjaxMapController {
         double lng = 127.039886 +r.nextDouble(0.001);
         obj.put("lat", lat);
         obj.put("lng", lng);
+        //{lat:22.222, lng:22.333}
         return obj;
     }
     @RequestMapping("/getcontent")
