@@ -24,6 +24,22 @@ public class MainController {
         return "index";
     }
 
+    @RequestMapping("/link1")
+    public String link1(Model model){
+        model.addAttribute("center","link1");
+        return "index";
+    }
+    @RequestMapping("/link2")
+    public String link2(Model model){
+        model.addAttribute("center","link2");
+        return "index";
+    }
+    @RequestMapping("/link3")
+    public String link3(Model model){
+        model.addAttribute("center","link3");
+        return "index";
+    }
+
     @RequestMapping("/login")
     public String login(Model model){
         model.addAttribute("center","login");

@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b991fd35-e78c-4f07-aeca-087106655e3e" name="Changes" comment="2025.3.17">
-      <change afterPath="$PROJECT_DIR$/day03/src/test/java/com/mc/Weather2ApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/link1.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/link2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/link3.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03/src/main/java/com/mc/controllerrest/AjaxRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/controllerrest/AjaxRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03/src/main/webapp/views/center.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/center.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/src/main/java/com/mc/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/src/main/webapp/views/left.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/left.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +130,7 @@
     "extract.method.default.visibility": "private",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/spring25/day03/src/main/resources/static/img",
+    "last_opened_file_path": "D:/spring25/day03/src/main/webapp/views",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -142,10 +143,10 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\spring25\day03\src\main\webapp\views" />
       <recent name="D:\spring25\day03\src\main\resources\static\img" />
       <recent name="D:\spring25\day03\src\main\webapp\views\map" />
       <recent name="D:\spring25\day03\src\main\webapp\views\jq" />
-      <recent name="D:\spring25\day03\src\main\webapp\views" />
       <recent name="D:\spring25\day03\src\main\webapp\views\js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -348,15 +349,7 @@
       <workItem from="1741649762281" duration="21046000" />
       <workItem from="1741736228208" duration="18141000" />
       <workItem from="1741824105746" duration="5181000" />
-      <workItem from="1742167153512" duration="12558000" />
-    </task>
-    <task id="LOCAL-00008" summary="2025.3.7&#10;TEST2">
-      <option name="closed" value="true" />
-      <created>1741310549146</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1741310549146</updated>
+      <workItem from="1742167153512" duration="13565000" />
     </task>
     <task id="LOCAL-00009" summary="2025.3.7&#10;TEST2">
       <option name="closed" value="true" />
@@ -742,7 +735,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742179513708</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="2025.3.17">
+      <option name="closed" value="true" />
+      <created>1742187946317</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1742187946318</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

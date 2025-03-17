@@ -6,13 +6,13 @@
     <h3>Main Left</h3>
     <ul class="nav nav-pills flex-column">
         <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="<c:url value="/link1"/> ">Link1</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="<c:url value="/link2"/>">Link2</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="<c:url value="/link3"/>">Link3</a>
         </li>
     </ul>
     <hr class="d-sm-none">
