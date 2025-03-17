@@ -5,6 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.ParseException;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -18,6 +19,11 @@ import java.util.Random;
 @Slf4j
 public class AjaxRestController {
 
+    @Value("${app.key.wkey}")
+    String wkey;
+    @Value("${app.key.wkey2}")
+    String wkey2;
+
     @RequestMapping("/checkid")
     public Object checkid(@RequestParam("cid") String cid){
         int result = 1;
@@ -28,9 +34,14 @@ public class AjaxRestController {
     }
     @RequestMapping("/getwh")
     public Object getwh() throws IOException, ParseException {
-        String key = "C2YXvxKurZ%2FmXrbnFlyub5B89GCCWUmYncj4wvNqlWzyP0IwmeP%2FAVl1mU3Tz7Kzk8mfT3f6Wm2wJJ9Z6yNjgw%3D%3D";
         String loc = "108";
-        Object result = WeatherUtil.getWeather(loc,key);
+        Object result = WeatherUtil.getWeather(loc,wkey);
+        return result;
+    }
+    @RequestMapping("/getwh2")
+    public Object getwh2() throws IOException, ParseException {
+        String loc = "1835848";
+        Object result = WeatherUtil.getWeather2(loc,wkey2);
         return result;
     }
     @RequestMapping("/gettime")

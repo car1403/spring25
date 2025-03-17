@@ -17,3 +17,13 @@ spring:
 logging:
   level:
     root: info   #  error < info < debug
+
+# 4. App
+app:
+  key:
+    wkey: C2YXvxKurZ%2FmXrbnFlyub5B89GCCWUmYncj4wvNqlWzyP0IwmeP%2FAVl1mU3Tz7Kzk8mfT3f6Wm2wJJ9Z6yNjgw%3D%3D
+    wkey2: 5f8cdbafcfe5dd8a4edbbe08e8d21e3d
+
+
+
+

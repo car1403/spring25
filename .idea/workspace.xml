@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b991fd35-e78c-4f07-aeca-087106655e3e" name="Changes" comment="2025.3.17">
+      <change afterPath="$PROJECT_DIR$/day03/src/test/java/com/mc/Weather2ApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/src/main/java/com/mc/controllerrest/AjaxRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/controllerrest/AjaxRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/resources/application-dev.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day03/src/main/webapp/views/center.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/center.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -110,6 +113,7 @@
     "Gradle.Day01ApplicationTests.executor": "Run",
     "Gradle.Day02ApplicationTests.executor": "Run",
     "Gradle.Download Sources.executor": "Run",
+    "Gradle.Weather2ApplicationTests.executor": "Run",
     "Gradle.WeatherApplicationTests.executor": "Run",
     "Gradle.day01 [bootRun].executor": "Run",
     "Gradle.day02 [bootRun].executor": "Run",
@@ -178,6 +182,30 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="Weather2ApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/day03" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.mc.Weather2ApplicationTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="WeatherApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -206,28 +234,6 @@
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/day02" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="bootRun" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="day02ws1 [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/day02ws1" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -311,10 +317,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.day03 [bootRun]" />
+        <item itemvalue="Gradle.Weather2ApplicationTests" />
         <item itemvalue="Gradle.WeatherApplicationTests" />
         <item itemvalue="Gradle.ApiExplorer" />
         <item itemvalue="Gradle.day02 [bootRun]" />
-        <item itemvalue="Gradle.day02ws1 [bootRun]" />
       </list>
     </recent_temporary>
   </component>
@@ -342,15 +348,7 @@
       <workItem from="1741649762281" duration="21046000" />
       <workItem from="1741736228208" duration="18141000" />
       <workItem from="1741824105746" duration="5181000" />
-      <workItem from="1742167153512" duration="8400000" />
-    </task>
-    <task id="LOCAL-00007" summary="2025.3.7&#10;TEST2">
-      <option name="closed" value="true" />
-      <created>1741310013274</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1741310013274</updated>
+      <workItem from="1742167153512" duration="12558000" />
     </task>
     <task id="LOCAL-00008" summary="2025.3.7&#10;TEST2">
       <option name="closed" value="true" />
@@ -736,7 +734,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742178612424</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="2025.3.17">
+      <option name="closed" value="true" />
+      <created>1742179513708</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1742179513708</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
