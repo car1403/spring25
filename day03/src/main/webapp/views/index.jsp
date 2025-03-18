@@ -15,6 +15,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <%-- KaKao Map Library   --%>
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a2f29f93dc4c0e209e8a6da86a3e488d"></script>
+    <%-- High Chart Library  --%>
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-3d.js"></script>
+    <script src="https://code.highcharts.com/modules/cylinder.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
 
     <style>
         .fakeimg {
