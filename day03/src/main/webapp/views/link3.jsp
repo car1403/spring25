@@ -40,7 +40,26 @@
             });
         },
         display2:function(result){
+            $('#min > td:nth-child(1)').text(result.response.body.items.item[0].taMin4);
+            $('#max > td:nth-child(1)').text(result.response.body.items.item[0].taMax4);
 
+            $('#min > td:nth-child(2)').text(result.response.body.items.item[0].taMin5);
+            $('#max > td:nth-child(2)').text(result.response.body.items.item[0].taMax5);
+
+            $('#min > td:nth-child(3)').text(result.response.body.items.item[0].taMin6);
+            $('#max > td:nth-child(3)').text(result.response.body.items.item[0].taMax6);
+
+            $('#min > td:nth-child(4)').text(result.response.body.items.item[0].taMin7);
+            $('#max > td:nth-child(4)').text(result.response.body.items.item[0].taMax7);
+
+            $('#min > td:nth-child(5)').text(result.response.body.items.item[0].taMin8);
+            $('#max > td:nth-child(5)').text(result.response.body.items.item[0].taMax8);
+
+            $('#min > td:nth-child(6)').text(result.response.body.items.item[0].taMin9);
+            $('#max > td:nth-child(6)').text(result.response.body.items.item[0].taMax9);
+
+            $('#min > td:nth-child(7)').text(result.response.body.items.item[0].taMin10);
+            $('#max > td:nth-child(7)').text(result.response.body.items.item[0].taMax10);
         },
         display:function(result){
             let temp = result.main.temp;
@@ -109,7 +128,6 @@
             <table id="winfo2" class="table table-dark">
                 <thead>
                 <tr>
-                    <th>D3</th>
                     <th>D4</th>
                     <th>D5</th>
                     <th>D6</th>
@@ -120,8 +138,7 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <td></td>
+                <tr id="min">
                     <td></td>
                     <td></td>
                     <td></td>
@@ -130,8 +147,7 @@
                     <td></td>
                     <td></td>
                 </tr>
-                <tr>
-                    <td></td>
+                <tr id="max">
                     <td></td>
                     <td></td>
                     <td></td>
