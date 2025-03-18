@@ -39,11 +39,10 @@
             let desc = result.weather[0].description;
             let icon = result.weather[0].icon;
             let txt = '';
-            txt += '<p>기온: '+temp+'</p>';
-            txt += '<p>체감: '+feel+'</p>';
-            txt += '<p>바람: '+speed+'</p>';
-            txt += '<p>날씨: '+desc+'</p>';
             txt += '<img src="https://openweathermap.org/img/wn/'+icon+'@2x.png">';
+            txt += '<span>기온: '+temp+'</span>';
+            txt += '<span>바람: '+speed+'</span>';
+            txt += '<span>날씨: '+desc+'</span>';
             $('#winfo').html(txt);
         },
         showMap:function(result){
