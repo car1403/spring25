@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b991fd35-e78c-4f07-aeca-087106655e3e" name="Changes" comment="2025.3.17">
+    <list default="true" id="b991fd35-e78c-4f07-aeca-087106655e3e" name="Changes" comment="2025.3.18">
+      <change afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/controllerrest/AjaxWeatherController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/src/main/java/com/mc/util/WeatherUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/util/WeatherUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day03/src/main/webapp/views/link3.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/link3.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -155,7 +156,7 @@
       <recent name="com.mc.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.day03 [bootRun]">
+  <component name="RunManager" selected="Gradle.Weather2ApplicationTests">
     <configuration name="ApiExplorer" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -315,8 +316,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.Weather2ApplicationTests" />
-        <item itemvalue="Gradle.WeatherApplicationTests" />
         <item itemvalue="Gradle.day03 [bootRun]" />
+        <item itemvalue="Gradle.WeatherApplicationTests" />
         <item itemvalue="Gradle.ApiExplorer" />
         <item itemvalue="Gradle.day02 [bootRun]" />
       </list>
@@ -346,15 +347,7 @@
       <workItem from="1741649762281" duration="21046000" />
       <workItem from="1741736228208" duration="18141000" />
       <workItem from="1741824105746" duration="5181000" />
-      <workItem from="1742167153512" duration="25722000" />
-    </task>
-    <task id="LOCAL-00011" summary="2025.3.7&#10;TEST2">
-      <option name="closed" value="true" />
-      <created>1741326284502</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1741326284502</updated>
+      <workItem from="1742167153512" duration="28663000" />
     </task>
     <task id="LOCAL-00012" summary="2025.3.7&#10;TEST2">
       <option name="closed" value="true" />
@@ -740,7 +733,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742197667802</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="2025.3.18">
+      <option name="closed" value="true" />
+      <created>1742258106503</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1742258106503</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -768,7 +769,8 @@
     <MESSAGE value="2025.3.12" />
     <MESSAGE value="2025.3.13" />
     <MESSAGE value="2025.3.17" />
-    <option name="LAST_COMMIT_MESSAGE" value="2025.3.17" />
+    <MESSAGE value="2025.3.18" />
+    <option name="LAST_COMMIT_MESSAGE" value="2025.3.18" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
