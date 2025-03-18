@@ -31,6 +31,16 @@
                     this.showMap(result);
                 }
             });
+            $.ajax({
+                url:'<c:url value="/getwinfo2"/>',
+                data:{loc:loc},
+                success:(result)=>{
+                    this.display2(result);
+                }
+            });
+        },
+        display2:function(result){
+
         },
         display:function(result){
             let temp = result.main.temp;
@@ -96,7 +106,43 @@
                 </div>
             </div>
             <div id="winfo"></div>
+            <table id="winfo2" class="table table-dark">
+                <thead>
+                <tr>
+                    <th>D3</th>
+                    <th>D4</th>
+                    <th>D5</th>
+                    <th>D6</th>
+                    <th>D7</th>
+                    <th>D8</th>
+                    <th>D9</th>
+                    <th>D10</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
 
+                </tbody>
+            </table>
             <!-- Weather info  -->
 
         </div>

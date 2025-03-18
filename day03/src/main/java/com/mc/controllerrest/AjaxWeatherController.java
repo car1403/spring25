@@ -13,7 +13,8 @@ import java.io.IOException;
 @RestController
 @Slf4j
 public class AjaxWeatherController {
-
+    @Value("${app.key.wkey}")
+    String wkey;
     @Value("${app.key.wkey2}")
     String wkey2;
 
@@ -28,5 +29,18 @@ public class AjaxWeatherController {
             default: target = "1835847";
         }
         return WeatherUtil.getWeather2(target, wkey2);
+    }
+
+    @RequestMapping("/getwinfo2")
+    public Object getwinfo2(@RequestParam("loc") String loc) throws IOException, ParseException {
+        String target = "11B10101";
+        switch (loc) {
+            case "a": target = "11B10101"; break;
+            case "s": target = "11B10101"; break;
+            case "b": target = "11H20201"; break;
+            case "j": target = "11G00201"; break;
+            default: target = "11B10101";
+        }
+        return WeatherUtil.getWeatherForecast(target, wkey);
     }
 }
