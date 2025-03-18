@@ -36,18 +36,37 @@
             let temp = result.main.temp;
             let feel = result.main.feels_like;
             let speed = result.wind.speed;
-            let desc = weather[0].description;
-            let icon = weather[0].icon;
+            let desc = result.weather[0].description;
+            let icon = result.weather[0].icon;
             let txt = '';
-            txt += '<p>'+temp+'</p>';
-            txt += '<p>'+feel+'</p>';
-            txt += '<p>'+speed+'</p>';
-            txt += '<p>'+desc+'</p>';
+            txt += '<p>기온: '+temp+'</p>';
+            txt += '<p>체감: '+feel+'</p>';
+            txt += '<p>바람: '+speed+'</p>';
+            txt += '<p>날씨: '+desc+'</p>';
             txt += '<img src="https://openweathermap.org/img/wn/'+icon+'@2x.png">';
             $('#winfo').html(txt);
         },
         showMap:function(result){
+            let lat = result.coord.lat;
+            let lng = result.coord.lon;
 
+            var mapContainer = document.getElementById('map');
+            var mapOption = {
+                center: new kakao.maps.LatLng(lat, lng),
+                level: 7
+            };
+            var map = new kakao.maps.Map(mapContainer, mapOption);
+
+            var mapTypeControl = new kakao.maps.MapTypeControl();
+            map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
+            var zoomControl = new kakao.maps.ZoomControl();
+            map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+
+            var markerPosition  = new kakao.maps.LatLng(lat, lng);
+            var marker = new kakao.maps.Marker({
+                map:map,
+                position: markerPosition
+            });
         }
     }
 
