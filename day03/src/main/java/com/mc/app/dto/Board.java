@@ -1,18 +1,18 @@
-package com.mc.dto;
+package com.mc.app.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
+import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
+@Data
 @Builder
-public class Content {
-    private double lat;
-    private double lng;
+public class Board {
+    private int id;
     private String title;
-    private String img;
-    private int target;
+    private String content;
+    private Date date;
 }

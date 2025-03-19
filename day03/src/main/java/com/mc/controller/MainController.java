@@ -1,6 +1,6 @@
 package com.mc.controller;
 
-import com.mc.dto.Board;
+import com.mc.app.dto.Board;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;

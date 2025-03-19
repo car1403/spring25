@@ -1,18 +1,16 @@
-package com.mc.dto;
+package com.mc.app.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
 @Builder
-public class Board {
-    private int id;
-    private String title;
-    private String content;
-    private Date date;
+public class Cust {
+    private String id;
+    private String pwd;
+    private String name;
 }
