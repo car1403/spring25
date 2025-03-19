@@ -1,4 +1,4 @@
-package com.mc;
+package com.mc.weather;
 
 import com.mc.util.WeatherUtil;
 import lombok.extern.slf4j.Slf4j;

@@ -1,4 +1,4 @@
-package com.mc;
+package com.mc.weather;
 
 import com.mc.util.WeatherUtil;
 import lombok.extern.slf4j.Slf4j;
@@ -10,13 +10,13 @@ import java.io.IOException;
 
 @SpringBootTest
 @Slf4j
-class WeatherForeCastApplicationTests {
+class Weather2ApplicationTests {
 
     @Test
     void contextLoads() throws IOException, ParseException {
-        String key = "C2YXvxKurZ%2FmXrbnFlyub5B89GCCWUmYncj4wvNqlWzyP0IwmeP%2FAVl1mU3Tz7Kzk8mfT3f6Wm2wJJ9Z6yNjgw%3D%3D";
-        String loc = "11B10101";
-        Object result = WeatherUtil.getWeatherForecast(loc,key);
+        String key = "5f8cdbafcfe5dd8a4edbbe08e8d21e3d";
+        String loc = "1835848";
+        Object result = WeatherUtil.getWeather2(loc,key);
         log.info(result.toString());
     }
 

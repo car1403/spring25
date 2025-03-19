@@ -1,4 +1,4 @@
-package com.mc;
+package com.mc.weather;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -7,8 +7,6 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.io.BufferedReader;
-import java.io.IOException;
-
 
 
 @SpringBootTest

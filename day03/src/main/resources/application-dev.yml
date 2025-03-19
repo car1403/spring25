@@ -19,7 +19,7 @@ spring:
 
 # 3. Mybatis
 mybatis:
-  type-aliases-package: com.mc.dto
+  type-aliases-package: com.mc.app.dto
   mapper-locations: classpath:/mapper/*.xml
 
 # 3. Log Level

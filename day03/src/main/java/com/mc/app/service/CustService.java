@@ -17,7 +17,7 @@ public class CustService {
     public void add(Cust cust) throws Exception {
         custRepository.insert(cust);
     }
-    public void modify(Cust cust) throws Exception {
+    public void mod(Cust cust) throws Exception {
         custRepository.update(cust);
     }
     public void del(String id) throws Exception {
