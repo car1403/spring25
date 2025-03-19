@@ -15,11 +15,11 @@ public class MainController {
     public String main(Model model){
         // 데이터베이스에서 가지고 온다.
         List<Board> boards = new ArrayList<Board>();
-        boards.add(Board.builder().id(1).title("공지사항1").date(new Date()).build());
-        boards.add(Board.builder().id(2).title("공지사항2").date(new Date()).build());
-        boards.add(Board.builder().id(3).title("공지사항3").date(new Date()).build());
-        boards.add(Board.builder().id(4).title("공지사항4").date(new Date()).build());
-        boards.add(Board.builder().id(5).title("공지사항5").date(new Date()).build());
+        boards.add(Board.builder().id(1).title("공지사항1").regdate(new Date()).build());
+        boards.add(Board.builder().id(2).title("공지사항2").regdate(new Date()).build());
+        boards.add(Board.builder().id(3).title("공지사항3").regdate(new Date()).build());
+        boards.add(Board.builder().id(4).title("공지사항4").regdate(new Date()).build());
+        boards.add(Board.builder().id(5).title("공지사항5").regdate(new Date()).build());
         model.addAttribute("boards", boards);
         return "index";
     }

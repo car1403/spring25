@@ -9,18 +9,17 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 @Slf4j
-class Insert {
+class SelectOne {
 
     @Autowired
     CustService custService;
 
     @Test
     void contextLoads() {
-        Cust cust = Cust.builder().id("id10").pwd("pwd10").name("james").build();
-        log.info(cust.toString());
+        Cust cust = null;
         try {
-            custService.add(cust);
-            log.info("OK");
+            cust = custService.get("id01");
+            log.info("OK:"+cust.toString());
         } catch (Exception e) {
            log.info("Id 중복");
         }

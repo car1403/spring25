@@ -7,21 +7,23 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.util.List;
+
 @SpringBootTest
 @Slf4j
-class Insert {
+class Select {
 
     @Autowired
     CustService custService;
 
     @Test
     void contextLoads() {
-        Cust cust = Cust.builder().id("id10").pwd("pwd10").name("james").build();
-        log.info(cust.toString());
+        List<Cust> custs = null;
         try {
-            custService.add(cust);
-            log.info("OK");
+            custs = custService.get();
+            log.info("OK:"+custs);
         } catch (Exception e) {
+            e.printStackTrace();
            log.info("Id 중복");
         }
     }

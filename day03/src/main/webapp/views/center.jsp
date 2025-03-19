@@ -63,7 +63,7 @@
             <tr>
                 <td>${b.id}</td>
                 <td>${b.title}</td>
-                <td>${b.date}</td>
+                <td>${b.regdate}</td>
             </tr>
         </c:forEach>
         </tbody>
