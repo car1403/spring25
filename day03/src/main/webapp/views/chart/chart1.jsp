@@ -12,9 +12,20 @@
 <script>
     const chart1 = {
         init:function(){
-            this.display();
+            this.getData();
+            setInterval(()=>{
+                this.getData();
+            },5000);
         },
-        display:function() {
+        getData:function(){
+            $.ajax({
+                url:'<c:url value="/getchart1"/>',
+                success:(result)=>{
+                    this.display(result);
+                }
+            });
+        },
+        display:function(result) {
             Highcharts.chart('container', {
                 chart: {
                     type: 'spline'
@@ -52,20 +63,7 @@
                         }
                     }
                 },
-                series: [
-                    {
-                        name:'Seoul',
-                        data:[1,2,5,8,10,19,25,30,19,15,6,2]
-                    },
-                    {
-                        name:'Jeju',
-                        data:[3,5,7,8,12,21,29,33,20,18,8,2]
-                    },
-                    {
-                        name:'Busan',
-                        data:[1,2,5,3,10,18,20,40,30,20,10,12]
-                    }
-                ]
+                series:result
             });
 
         }
@@ -77,6 +75,6 @@
 
 <div class="col-sm-10">
     <h2>Chart1 Page</h2>
-    <h5>Title description, Sep 2, 2025</h5>
+
     <div id="container"></div>
 </div>
