@@ -24,8 +24,7 @@ class Select {
             log.info("OK:"+custs);
 
         } catch (Exception e) {
-            e.printStackTrace();
-           log.info("Id 중복");
+           log.info("시스템 문제 발생");
         }
     }
 

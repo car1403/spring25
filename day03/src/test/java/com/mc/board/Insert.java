@@ -19,12 +19,13 @@ class Insert {
     @Test
     void contextLoads() {
         Board board =
-                Board.builder().title("제목").content("내용").build();
+                Board.builder().boardTitle("제목").boardContent("내용").boardAuthor("id02").build();
         log.info(board.toString());
         try {
             boardService.add(board);
             log.info("OK");
         } catch (Exception e) {
+            e.printStackTrace();
            log.info("Id 중복");
         }
     }

@@ -22,7 +22,8 @@ class Update {
             custService.mod(cust);
             log.info("OK");
         } catch (Exception e) {
-           log.info("Id 중복");
+            e.printStackTrace();
+           log.info("시스템오류");
         }
     }
 

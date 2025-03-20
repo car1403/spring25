@@ -19,7 +19,7 @@ class Update {
     @Test
     void contextLoads() {
         Board board =
-                Board.builder().id(1).title("변경제목").content("변경내용").build();
+                Board.builder().boardId(1).boardTitle("제목").boardContent("내용").boardAuthor("id02").build();
         log.info(board.toString());
         try {
             boardService.mod(board);

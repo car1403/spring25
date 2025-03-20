@@ -11,8 +11,11 @@ import java.util.Date;
 @Data
 @Builder
 public class Board {
-    private int id;
-    private String title;
-    private String content;
-    private Date regdate;
+    private int boardId;
+    private String boardTitle;
+    private String boardContent;
+    private String boardAuthor;
+    private int boardHit;
+    private Date boardrdate;
+    private Date boardudate;
 }

@@ -16,7 +16,7 @@ class Delete {
 
     @Test
     void contextLoads() {
-        int id = 1;
+        int id = 2;
         try {
             boardService.del(id);
             log.info("OK");
