@@ -66,7 +66,7 @@
                     //alert(result);
                     if(result == 1){
                         $('#msg').text('OK');
-                        $('#id').off('blur')
+                        $('#id').off('blur');
                     }else{
                         $('#msg').text('NO!');
                         $('#id').blur(()=>{
