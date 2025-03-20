@@ -1,6 +1,9 @@
 package com.mc.controllerrest;
 
+import com.mc.app.dto.Cust;
+import com.mc.app.service.CustService;
 import com.mc.util.WeatherUtil;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -17,7 +20,10 @@ import java.util.Random;
 
 @RestController
 @Slf4j
+@RequiredArgsConstructor
 public class AjaxRestController {
+
+    final CustService custService;
 
     @Value("${app.key.wkey}")
     String wkey;
@@ -25,9 +31,12 @@ public class AjaxRestController {
     String wkey2;
 
     @RequestMapping("/checkid")
-    public Object checkid(@RequestParam("cid") String cid){
+    public Object checkid(@RequestParam("cid") String cid) throws Exception {
         int result = 1;
-        if(cid.equals("aaaa") || cid.equals("bbbb") || cid.equals("cccc")){
+        log.info('|'+cid+'|');
+        Cust dbCust = custService.get(cid);
+        if(dbCust != null && dbCust.getCustId().equals(cid)){
+            log.info(dbCust.toString());
             result = 0;
         }
         return result;
