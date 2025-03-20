@@ -40,4 +40,15 @@ public class BoardService implements MCService<Board, Integer> {
     public List<Board> get() throws Exception {
         return boardRepository.select();
     }
+
+    public void hit(Integer id) throws Exception {
+        boardRepository.updateHit(id);
+    }
 }
+
+
+
+
+
+
+

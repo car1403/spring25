@@ -17,6 +17,9 @@
         UPDATE board SET board_title=#{boardTitle},board_content=#{boardContent}
                      WHERE board_id=#{boardId}
     </update>
+    <update id="updateHit" parameterType="Integer">
+        UPDATE board SET board_hit = board_hit + 1 WHERE board_id = #{boardId}
+    </update>
     <delete id="delete" parameterType="Integer">
         DELETE FROM board WHERE board_id=#{boardId}
     </delete>

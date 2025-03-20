@@ -9,4 +9,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 @Mapper
 public interface BoardRepository extends MCRepository<Board, Integer> {
+    void updateHit(Integer id) throws Exception;
 }
