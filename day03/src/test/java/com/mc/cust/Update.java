@@ -16,7 +16,7 @@ class Update {
 
     @Test
     void contextLoads() {
-        Cust cust = Cust.builder().id("id02").pwd("222222").name("김말숙").build();
+        Cust cust = Cust.builder().custId("id02").custPwd("22222").custName("james").build();
         log.info(cust.toString());
         try {
             custService.mod(cust);

@@ -16,7 +16,7 @@ class Insert {
 
     @Test
     void contextLoads() {
-        Cust cust = Cust.builder().id("id10").pwd("pwd10").name("james").build();
+        Cust cust = Cust.builder().custId("id10").custPwd("pwd10").custName("james").build();
         log.info(cust.toString());
         try {
             custService.add(cust);

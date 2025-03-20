@@ -17,7 +17,7 @@ class Insert {
 
     @Test
     void contextLoads() {
-        Item item = Item.builder().name("바지").price(50000).imgname("b.jpg").build();
+        Item item = Item.builder().itemName("바지").itemPrice(50000).itemImgname("b.jpg").build();
         log.info(item.toString());
         try {
             itemService.add(item);

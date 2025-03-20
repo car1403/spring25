@@ -22,11 +22,6 @@ class Select {
         try {
             custs = custService.get();
             log.info("OK:"+custs);
-            custs.forEach(cust -> log.info("cust:{}",cust.toString()));
-            List<Integer> names = custs.stream().map(cust -> cust.getName().length()).toList();
-            custs.stream().map(cust -> cust.getName()).forEach(name -> log.info("name:{}",name));
-            List<Cust> custs2 = custs.stream().filter(cust -> cust.getName().contains("김")).toList();
-            double avg = custs.stream().mapToInt(cust->cust.getName().length()).average().getAsDouble();
 
         } catch (Exception e) {
             e.printStackTrace();
