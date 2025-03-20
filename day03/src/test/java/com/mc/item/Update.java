@@ -18,7 +18,7 @@ class Update {
 
     @Test
     void contextLoads() {
-        Item item = Item.builder().name("바지").price(50000).imgname("b.jpg").build();
+        Item item = Item.builder().id(1).name("바지2").price(50000).imgname("b.jpg").build();
 
         log.info(item.toString());
         try {

@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @Data
 @Builder
 public class Cust {
-    private String id;
-    private String pwd;
-    private String name;
+    private String custId;
+    private String custPwd;
+    private String custName;
 }

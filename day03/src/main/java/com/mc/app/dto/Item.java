@@ -12,10 +12,9 @@ import java.util.Date;
 @Data
 @Builder
 public class Item {
-    private int id;
-    private String name;
-    private int price;
-    private String imgname;
-    private Date regdate;
-    private Date udate;
+    private int itemId;
+    private String itemName;
+    private int itemPrice;
+    private String itemImgname;
+    private Date itemRdate;
 }
