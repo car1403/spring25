@@ -27,10 +27,6 @@
             $('#wt').html(data);
         },
         display2:function(result){
-            alert(result);
-            alert(result.main.temp)
-            alert(result.weather[0].icon)
-            alert(result.weather[0].description)
             let txt = '';
             txt += '<p>'
             txt += result.main.temp;
@@ -56,14 +52,16 @@
             <th>Id</th>
             <th>Title</th>
             <th>Date</th>
+            <th>Hit</th>
         </tr>
         </thead>
         <tbody>
         <c:forEach var="b" items="${boards}">
             <tr>
-                <td>${b.id}</td>
-                <td>${b.title}</td>
-                <td>${b.regdate}</td>
+                <td>${b.boardId}</td>
+                <td>${b.boardTitle}</td>
+                <td>${b.boardRdate}</td>
+                <td>${b.boardHit}</td>
             </tr>
         </c:forEach>
         </tbody>

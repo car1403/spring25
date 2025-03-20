@@ -16,6 +16,6 @@ public class Board {
     private String boardContent;
     private String boardAuthor;
     private int boardHit;
-    private Date boardrdate;
-    private Date boardudate;
+    private Date boardRdate;
+    private Date boardUdate;
 }

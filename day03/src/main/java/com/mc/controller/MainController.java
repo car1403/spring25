@@ -1,6 +1,8 @@
 package com.mc.controller;
 
 import com.mc.app.dto.Board;
+import com.mc.app.service.BoardService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,11 +12,17 @@ import java.util.Date;
 import java.util.List;
 
 @Controller
+@RequiredArgsConstructor
 public class MainController {
+
+    final BoardService boardService;
+
+
     @RequestMapping("/")
-    public String main(Model model){
+    public String main(Model model) throws Exception {
         // 데이터베이스에서 가지고 온다.
-        List<Board> boards = new ArrayList<Board>();
+        List<Board> boards = null;
+        boards = boardService.get();
         model.addAttribute("boards", boards);
         return "index";
     }
