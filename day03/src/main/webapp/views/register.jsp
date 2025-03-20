@@ -36,11 +36,6 @@
                 $('#pwd').focus();
                 return;
             }
-            if(name == '' || name == null){
-                $('#msg').text('NAME을 입력하세요');
-                $('#name').focus();
-                return;
-            }
             if(pwd2 == '' || pwd2 == null){
                 $('#msg').text('PWD2를 입력하세요');
                 $('#pwd2').focus();
@@ -51,6 +46,13 @@
                 $('#pwd2').focus();
                 return;
             }
+            if(name == '' || name == null){
+                $('#msg').text('NAME을 입력하세요');
+                $('#name').focus();
+                return;
+            }
+
+
             let c = confirm('회원가입 하시겠습니까 ?');
             if(c == true){
                 this.send();
