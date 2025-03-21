@@ -20,6 +20,19 @@ public class CustController {
         model.addAttribute("center", dir + "center");
         return "index";
     }
+
+    @RequestMapping("/get")
+    public String get(Model model){
+        model.addAttribute("left", dir + "left");
+        model.addAttribute("center", dir + "get");
+        return "index";
+    }
+    @RequestMapping("/add")
+    public String add(Model model){
+        model.addAttribute("left", dir + "left");
+        model.addAttribute("center", dir + "add");
+        return "index";
+    }
 }
 
 
