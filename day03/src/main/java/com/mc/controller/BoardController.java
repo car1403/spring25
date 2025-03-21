@@ -56,6 +56,17 @@ public class BoardController {
         model.addAttribute("center", dir + "detail");
         return "index";
     }
+
+    @RequestMapping("/del")
+    public String del(Model model, @RequestParam("id") int id) throws Exception {
+        boardService.del(id);
+        return "redirect:/board/get";
+    }
+    @RequestMapping("/updateimpl")
+    public String updateimpl(Model model, Board board) throws Exception {
+        boardService.mod(board);
+        return "redirect:/board/detail?id="+board.getBoardId();
+    }
 }
 
 

@@ -9,6 +9,14 @@
             $('#board_update_btn').click(()=>{
                 this.send();
             });
+            $('#board_delete_btn').click(()=>{
+                let c = confirm("삭제 하시겠습니까 ?");
+                if(c == true){
+                    let id = $('#id').val();
+                    location.href='<c:url value="/board/del?id='+id+'"/>';
+                }
+
+            });
         },
         send:function(){
             $('#board_add_form').attr('method','post');
@@ -37,10 +45,11 @@
                     <label for="content">Content:</label>
                     <textarea name="boardContent" class="form-control" rows="5" id="content">${board.boardContent}</textarea>
                 </div>
-                <input type="hidden" name="boardId" value="${board.boardId}">
+                <input type="hidden" id="id" name="boardId" value="${board.boardId}">
 
             </form>
             <button id="board_update_btn" class="btn btn-primary">Update</button>
+            <button id="board_delete_btn" class="btn btn-danger">Delete</button>
 
         </div>
         <div class="col-sm-4">
