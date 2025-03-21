@@ -56,4 +56,11 @@ public class LoginController {
         model.addAttribute("center","custinfo");
         return "index";
     }
+    @RequestMapping("/updatecustinfo")
+    public String updatecustinfo(Model model, Cust cust) throws Exception {
+        custService.mod(cust);
+        model.addAttribute("cust",cust);
+        model.addAttribute("center","custinfo");
+        return "index";
+    }
 }
