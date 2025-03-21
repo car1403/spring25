@@ -125,6 +125,14 @@
             <li class="nav-item">
                 <a class="nav-link" href="<c:url value="/chart"/>">Chart</a>
             </li>
+            <c:if test="${sessionScope.cust.custId != null}">
+                <li class="nav-item">
+                    <a class="nav-link" href="<c:url value="/board"/>">Board</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<c:url value="/cust"/>">Cust</a>
+                </li>
+            </c:if>
         </ul>
     </div>
 </nav>
