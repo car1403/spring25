@@ -38,16 +38,22 @@ public class LoginController {
         model.addAttribute("msg","로그인 실패!!!");
         return "index";
     }
-    @RequestMapping("/custinfo")
-    public String custinfo(Model model, Cust cust) throws Exception {
 
-        return "index";
-    }
     @RequestMapping("/logout")
     public String logout(Model model, HttpSession httpSession) throws Exception {
         if(httpSession != null){
             httpSession.invalidate();
         }
         return "redirect:/";
+    }
+
+    @RequestMapping("/custinfo")
+    public String custinfo(Model model, @RequestParam("id") String id) throws Exception {
+        Cust dbCust = custService.get(id);
+        if(dbCust != null){
+            model.addAttribute("cust",dbCust);
+        }
+        model.addAttribute("center","custinfo");
+        return "index";
     }
 }

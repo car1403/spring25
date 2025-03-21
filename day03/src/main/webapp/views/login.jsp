@@ -27,11 +27,11 @@
             <form id="login_form">
                 <div class="form-group">
                     <label for="id">Id:</label>
-                    <input type="text" name="id" class="form-control" placeholder="Enter id" id="id">
+                    <input type="text" value="id01" name="id" class="form-control" placeholder="Enter id" id="id">
                 </div>
                 <div class="form-group">
                     <label for="pwd">Password:</label>
-                    <input type="password" name="pwd" class="form-control" placeholder="Enter password" id="pwd">
+                    <input type="password" value="pwd01" name="pwd" class="form-control" placeholder="Enter password" id="pwd">
                 </div>
             </form>
             <button id="login_btn" class="btn btn-primary">LOGIN</button>
