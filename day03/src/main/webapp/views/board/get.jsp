@@ -8,6 +8,25 @@
 
 <div class="col-sm-10">
     <h2>Board Get Page</h2>
-    <h5>Title description, Sep 2, 2025</h5>
+    <table class="table">
+        <thead class="thead-light">
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Date</th>
+            <th>Hit</th>
+        </tr>
+        </thead>
+        <tbody>
+        <c:forEach var="b" items="${boards}">
+            <tr>
+                <td>${b.boardId}</td>
+                <td>${b.boardTitle}</td>
+                <td>${b.boardRdate}</td>
+                <td>${b.boardHit}</td>
+            </tr>
+        </c:forEach>
+        </tbody>
+    </table>
 
 </div>
