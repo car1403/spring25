@@ -7,6 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
@@ -39,6 +40,20 @@ public class BoardController {
     public String add(Model model){
         model.addAttribute("left", dir + "left");
         model.addAttribute("center", dir + "add");
+        return "index";
+    }
+    @RequestMapping("/addimpl")
+    public String addimpl(Model model, Board board) throws Exception {
+        boardService.add(board);
+        return "redirect:/board/get";
+    }
+    @RequestMapping("/detail")
+    public String detail(Model model, @RequestParam("id") int id) throws Exception {
+        Board board = boardService.get(id);
+        boardService.hit(id); // count ++
+        model.addAttribute("board",board);
+        model.addAttribute("left", dir + "left");
+        model.addAttribute("center", dir + "detail");
         return "index";
     }
 }

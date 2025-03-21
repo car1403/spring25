@@ -1,5 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%--Center Page--%>
 
 <script>
@@ -21,8 +22,8 @@
         <c:forEach var="b" items="${boards}">
             <tr>
                 <td>${b.boardId}</td>
-                <td>${b.boardTitle}</td>
-                <td>${b.boardRdate}</td>
+                <td><a href="<c:url value="/board/detail?id=${b.boardId}"/>">${b.boardTitle}</a></td>
+                <td><fmt:formatDate  value="${b.boardRdate}" pattern="yyyy-MM-dd" /> </td>
                 <td>${b.boardHit}</td>
             </tr>
         </c:forEach>
