@@ -7,6 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
@@ -27,6 +28,15 @@ public class ItemController {
         model.addAttribute("items", items);
         model.addAttribute("left",dir+"left");
         model.addAttribute("center",dir+"center");
+        return "index";
+    }
+    @RequestMapping("/detail")
+    public String detail(Model model, @RequestParam("id") int id) throws Exception {
+        Item item = null;
+        item = itemService.get(id);
+        model.addAttribute("item", item);
+        model.addAttribute("left",dir+"left");
+        model.addAttribute("center",dir+"detail");
         return "index";
     }
 
