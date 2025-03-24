@@ -18,7 +18,7 @@ class Insert {
 
     @Test
     void contextLoads() {
-        Cart cart = Cart.builder().custId("id02").itemId(1).itemCnt(1).build();
+        Cart cart = Cart.builder().custId("id03").itemId(1).cartCnt(1).build();
         log.info(cart.toString());
         try {
             cartService.add(cart);

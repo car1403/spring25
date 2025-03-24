@@ -12,7 +12,7 @@
         where c.cust_id = #{custId};
     </select>
     <insert id="insert" parameterType="cart">
-        INSERT INTO cart VALUES (#{custId}, #{itemId} , #{itemCnt} ,now())
+        INSERT INTO cart VALUES (#{custId}, #{itemId} , #{cartCnt} ,now())
         ON DUPLICATE KEY UPDATE
         cart_cnt = cart_cnt + 1
     </insert>
