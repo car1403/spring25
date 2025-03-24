@@ -19,7 +19,7 @@
                 <td>${c.itemImgname}</td>
                 <td>${c.itemName}</td>
                 <td>${c.itemPrice}</td>
-                <td>${c.itemCnt}</td>
+                <td>${c.cartCnt}</td>
                 <td>${c.itemRdate}</td>
             </tr>
         </c:forEach>

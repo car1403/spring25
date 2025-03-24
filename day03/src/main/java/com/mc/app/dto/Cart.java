@@ -14,7 +14,7 @@ import java.util.Date;
 public class Cart {
     private String custId;
     private int itemId;
-    private int itemCnt;
+    private int cartCnt;
     private String itemName;
     private int itemPrice;
     private String itemImgname;
