@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b991fd35-e78c-4f07-aeca-087106655e3e" name="Changes" comment="2025.3.24">
-      <change afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/app/repository/CartRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/app/service/CartService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03/src/test/java/com/mc/cart/Delete.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03/src/test/java/com/mc/cart/Insert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03/src/test/java/com/mc/cart/Select.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03/src/main/resources/mapper/cartmapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/resources/mapper/cartmapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03/src/main/webapp/views/item/detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/item/detail.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="b991fd35-e78c-4f07-aeca-087106655e3e" name="Changes" comment="2025.3.24" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -404,15 +395,7 @@
       <workItem from="1742275491244" duration="5335000" />
       <workItem from="1742340300629" duration="24079000" />
       <workItem from="1742429411547" duration="38203000" />
-      <workItem from="1742772168311" duration="13548000" />
-    </task>
-    <task id="LOCAL-00047" summary="2025.3.13">
-      <option name="closed" value="true" />
-      <created>1741926973245</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1741926973245</updated>
+      <workItem from="1742772168311" duration="13855000" />
     </task>
     <task id="LOCAL-00048" summary="2025.3.13">
       <option name="closed" value="true" />
@@ -798,7 +781,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742784271914</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="2025.3.24">
+      <option name="closed" value="true" />
+      <created>1742794884056</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1742794884057</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
