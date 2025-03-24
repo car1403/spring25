@@ -1,11 +1,14 @@
 package com.mc.controller;
 
 import com.mc.app.dto.Board;
+import com.mc.app.dto.Cart;
 import com.mc.app.service.BoardService;
+import com.mc.app.service.CartService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -16,6 +19,7 @@ import java.util.List;
 public class MainController {
 
     final BoardService boardService;
+    final CartService cartService;
 
 
     @RequestMapping("/")
@@ -63,6 +67,14 @@ public class MainController {
     @RequestMapping("/about")
     public String about(Model model){
         model.addAttribute("center","about");
+        return "index";
+    }
+
+    @RequestMapping("/cart")
+    public String cart(Model model, @RequestParam("id") String id) throws Exception {
+        List<Cart> carts = cartService.findByUser(id);
+        model.addAttribute("carts",carts);
+        model.addAttribute("center","cart");
         return "index";
     }
 }

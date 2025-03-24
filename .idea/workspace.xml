@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b991fd35-e78c-4f07-aeca-087106655e3e" name="Changes" comment="2025.3.24" />
+    <list default="true" id="b991fd35-e78c-4f07-aeca-087106655e3e" name="Changes" comment="2025.3.24">
+      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/cart.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/src/main/java/com/mc/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/src/main/webapp/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/index.jsp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -142,7 +147,7 @@
     "extract.method.default.visibility": "private",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/spring25/day03/src/test/java/com/mc/cart",
+    "last_opened_file_path": "D:/spring25/day03/src/main/webapp/views",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -158,11 +163,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\spring25\day03\src\main\webapp\views" />
       <recent name="D:\spring25\day03\src\test\java\com\mc\cart" />
       <recent name="D:\spring25\day03\src\main\resources\mapper" />
       <recent name="D:\spring25\day03\src\main\webapp\views\item" />
       <recent name="D:\spring25" />
-      <recent name="D:\spring25\day02\src\test\java\com\mc" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\spring25\day02ws1\src\main\resources\static\img" />
@@ -175,7 +180,7 @@
       <recent name="com.mc.board" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Delete">
+  <component name="RunManager" selected="Gradle.day03 [bootRun]">
     <configuration name="Delete" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -358,10 +363,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.day03 [bootRun]" />
         <item itemvalue="Gradle.Delete" />
         <item itemvalue="Gradle.Select (1)" />
         <item itemvalue="Gradle.Insert" />
-        <item itemvalue="Gradle.day03 [bootRun]" />
         <item itemvalue="Gradle.SelectOne" />
       </list>
     </recent_temporary>
@@ -395,15 +400,7 @@
       <workItem from="1742275491244" duration="5335000" />
       <workItem from="1742340300629" duration="24079000" />
       <workItem from="1742429411547" duration="38203000" />
-      <workItem from="1742772168311" duration="13855000" />
-    </task>
-    <task id="LOCAL-00048" summary="2025.3.13">
-      <option name="closed" value="true" />
-      <created>1741927436800</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1741927436801</updated>
+      <workItem from="1742772168311" duration="15604000" />
     </task>
     <task id="LOCAL-00049" summary="2025.3.13">
       <option name="closed" value="true" />
@@ -789,7 +786,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742794884057</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="2025.3.24">
+      <option name="closed" value="true" />
+      <created>1742797397581</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1742797397581</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

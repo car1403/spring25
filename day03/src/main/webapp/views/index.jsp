@@ -96,6 +96,9 @@
                 <a class="nav-link" href="<c:url value="/custinfo?id=${sessionScope.cust.custId}"/> ">${sessionScope.cust.custId}</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="<c:url value="/cart?id=${sessionScope.cust.custId}"/> ">Cart</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="<c:url value="/logout"/> ">Logout</a>
             </li>
         </c:otherwise>
