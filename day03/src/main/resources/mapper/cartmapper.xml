@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mc.app.repository.CartRepository">
+    <select id="selectOne" parameterType="Integer" resultType="cart">
+    </select>
+    <select id="select" resultType="cart" parameterType="String">
+        select * from cart as c
+        inner join item as i
+        on c.item_id = i.item_id
+        where c.cust_id = #{custId};
+    </select>
+    <insert id="insert" parameterType="cart">
+        INSERT INTO cart VALUES (${custId}, ${itemId} , ${cartCnt} ,now())
+        ON DUPLICATE KEY UPDATE
+        cart_cnt = cart_cnt + 1
+    </insert>
+    <update id="update" parameterType="cart">
+
+    </update>
+    <delete id="delete" parameterType="cart">
+        DELETE FROM cart WHERE cust_id=#{custId} AND item_id=${itemId}
+    </delete>
+
+</mapper>
