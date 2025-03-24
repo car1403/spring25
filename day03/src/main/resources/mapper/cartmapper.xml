@@ -5,14 +5,14 @@
 <mapper namespace="com.mc.app.repository.CartRepository">
     <select id="selectOne" parameterType="Integer" resultType="cart">
     </select>
-    <select id="select" resultType="cart" parameterType="String">
+    <select id="findByUser" resultType="cart" parameterType="String">
         select * from cart as c
         inner join item as i
         on c.item_id = i.item_id
         where c.cust_id = #{custId};
     </select>
     <insert id="insert" parameterType="cart">
-        INSERT INTO cart VALUES (${custId}, ${itemId} , ${cartCnt} ,now())
+        INSERT INTO cart VALUES (#{custId}, #{itemId} , #{itemCnt} ,now())
         ON DUPLICATE KEY UPDATE
         cart_cnt = cart_cnt + 1
     </insert>
@@ -20,7 +20,7 @@
 
     </update>
     <delete id="delete" parameterType="cart">
-        DELETE FROM cart WHERE cust_id=#{custId} AND item_id=${itemId}
+        DELETE FROM cart WHERE cust_id=#{custId} AND item_id=#{itemId}
     </delete>
 
 </mapper>
