@@ -4,9 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b991fd35-e78c-4f07-aeca-087106655e3e" name="Changes" comment="2025.3.20">
-      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/custinfo.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03/src/main/java/com/mc/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/controller/LoginController.java" afterDir="false" />
+    <list default="true" id="b991fd35-e78c-4f07-aeca-087106655e3e" name="Changes" comment="2025.3.21">
+      <change afterPath="$PROJECT_DIR$/cc.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day02/src/test/java/com/mc/cc.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/app/dto/Sales.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/controller/ItemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/item/center.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/item/left.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day02/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/day02/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day02/src/test/java/com/mc/Day02ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/day02/src/test/java/com/mc/Day02ApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/src/main/webapp/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +154,7 @@
     "extract.method.default.visibility": "private",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/spring25/day03/src/main/webapp/views",
+    "last_opened_file_path": "D:/spring25/day03/src/main/webapp/views/item",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -161,28 +170,28 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\spring25\day03\src\main\webapp\views" />
-      <recent name="D:\spring25\day03\src\test\java\com\mc\item" />
-      <recent name="D:\spring25\day03\src\test\java\com\mc" />
-      <recent name="D:\spring25\day03\src\main\resources\mapper" />
-      <recent name="D:\spring25\day03\src\test\java\com\mc\board" />
+      <recent name="D:\spring25\day03\src\main\webapp\views\item" />
+      <recent name="D:\spring25" />
+      <recent name="D:\spring25\day02\src\test\java\com\mc" />
+      <recent name="D:\spring25\day03\src\main\webapp\views\cust" />
+      <recent name="D:\spring25\day03\src\main\webapp\views\board" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\spring25\day02ws1\src\main\resources\static\img" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mc.controller" />
       <recent name="com.mc.board" />
       <recent name="com.mc.app.service" />
       <recent name="com.mc.app.repository" />
       <recent name="com.mc.app.dto" />
-      <recent name="com.mc.cust" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.day03 [bootRun]">
-    <configuration name="Delete" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.SelectOne">
+    <configuration name="Day02ApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/day03" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/day02" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
@@ -192,7 +201,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.mc.board.Delete&quot;" />
+            <option value="&quot;com.mc.Day02ApplicationTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -203,7 +212,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="Hit" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Select" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/day03" />
@@ -216,7 +225,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.mc.board.Hit&quot;" />
+            <option value="&quot;com.mc.item.Select&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -227,7 +236,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="Select (2)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SelectOne" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/day03" />
@@ -240,7 +249,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.mc.board.Select&quot;" />
+            <option value="&quot;com.mc.item.SelectOne&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -251,7 +260,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="SelectOne (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Update" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/day03" />
@@ -264,7 +273,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.mc.cust.SelectOne&quot;" />
+            <option value="&quot;com.mc.cust.Update&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -361,11 +370,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.SelectOne" />
+        <item itemvalue="Gradle.Select" />
         <item itemvalue="Gradle.day03 [bootRun]" />
-        <item itemvalue="Gradle.SelectOne (1)" />
-        <item itemvalue="Gradle.Hit" />
-        <item itemvalue="Gradle.Delete" />
-        <item itemvalue="Gradle.Select (2)" />
+        <item itemvalue="Gradle.Day02ApplicationTests" />
+        <item itemvalue="Gradle.Update" />
       </list>
     </recent_temporary>
   </component>
@@ -397,87 +406,8 @@
       <workItem from="1742274346838" duration="1114000" />
       <workItem from="1742275491244" duration="5335000" />
       <workItem from="1742340300629" duration="24079000" />
-      <workItem from="1742429411547" duration="19230000" />
-    </task>
-    <task id="LOCAL-00034" summary="2025.3.11">
-      <option name="closed" value="true" />
-      <created>1741679067029</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1741679067029</updated>
-    </task>
-    <task id="LOCAL-00035" summary="2025.3.12">
-      <option name="closed" value="true" />
-      <created>1741740492605</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1741740492605</updated>
-    </task>
-    <task id="LOCAL-00036" summary="2025.3.12">
-      <option name="closed" value="true" />
-      <created>1741747480420</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1741747480420</updated>
-    </task>
-    <task id="LOCAL-00037" summary="2025.3.12">
-      <option name="closed" value="true" />
-      <created>1741755125874</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1741755125874</updated>
-    </task>
-    <task id="LOCAL-00038" summary="2025.3.12">
-      <option name="closed" value="true" />
-      <created>1741758083792</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1741758083792</updated>
-    </task>
-    <task id="LOCAL-00039" summary="2025.3.12">
-      <option name="closed" value="true" />
-      <created>1741832540596</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1741832540596</updated>
-    </task>
-    <task id="LOCAL-00040" summary="2025.3.12">
-      <option name="closed" value="true" />
-      <created>1741832964774</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1741832964774</updated>
-    </task>
-    <task id="LOCAL-00041" summary="2025.3.12">
-      <option name="closed" value="true" />
-      <created>1741840235896</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1741840235896</updated>
-    </task>
-    <task id="LOCAL-00042" summary="2025.3.12">
-      <option name="closed" value="true" />
-      <created>1741846047922</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1741846047922</updated>
-    </task>
-    <task id="LOCAL-00043" summary="2025.3.12">
-      <option name="closed" value="true" />
-      <created>1741850062513</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1741850062513</updated>
+      <workItem from="1742429411547" duration="38203000" />
+      <workItem from="1742772168311" duration="2891000" />
     </task>
     <task id="LOCAL-00044" summary="2025.3.12">
       <option name="closed" value="true" />
@@ -791,7 +721,87 @@
       <option name="project" value="LOCAL" />
       <updated>1742454395293</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="2025.3.20">
+      <option name="closed" value="true" />
+      <created>1742517096435</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1742517096436</updated>
+    </task>
+    <task id="LOCAL-00084" summary="2025.3.20">
+      <option name="closed" value="true" />
+      <created>1742517430118</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1742517430118</updated>
+    </task>
+    <task id="LOCAL-00085" summary="2025.3.20">
+      <option name="closed" value="true" />
+      <created>1742518021514</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1742518021514</updated>
+    </task>
+    <task id="LOCAL-00086" summary="2025.3.20">
+      <option name="closed" value="true" />
+      <created>1742518324140</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1742518324140</updated>
+    </task>
+    <task id="LOCAL-00087" summary="2025.3.21">
+      <option name="closed" value="true" />
+      <created>1742520337806</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1742520337806</updated>
+    </task>
+    <task id="LOCAL-00088" summary="2025.3.21">
+      <option name="closed" value="true" />
+      <created>1742520802168</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1742520802168</updated>
+    </task>
+    <task id="LOCAL-00089" summary="2025.3.21">
+      <option name="closed" value="true" />
+      <created>1742521348910</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1742521348910</updated>
+    </task>
+    <task id="LOCAL-00090" summary="2025.3.21">
+      <option name="closed" value="true" />
+      <created>1742530659174</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1742530659174</updated>
+    </task>
+    <task id="LOCAL-00091" summary="2025.3.21">
+      <option name="closed" value="true" />
+      <created>1742531548422</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1742531548422</updated>
+    </task>
+    <task id="LOCAL-00092" summary="2025.3.21">
+      <option name="closed" value="true" />
+      <created>1742535824336</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1742535824336</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -822,7 +832,8 @@
     <MESSAGE value="2025.3.18" />
     <MESSAGE value="2025.3.19" />
     <MESSAGE value="2025.3.20" />
-    <option name="LAST_COMMIT_MESSAGE" value="2025.3.20" />
+    <MESSAGE value="2025.3.21" />
+    <option name="LAST_COMMIT_MESSAGE" value="2025.3.21" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
