@@ -13,8 +13,11 @@
         },
         del:function(item_id){
             let cust_id = '${sessionScope.cust.custId}';
-            alert('del:'+cust_id+' '+item_id);
-            location.href='';
+            let c = confirm('삭제 하시겠습니까 ?');
+            if(c == true){
+                //location.href='/cart/del?custId='+cust_id+'&itemId='+item_id;
+                location.href='<c:url value="/cart/del?custId='+cust_id+'&itemId='+item_id+'"/>';
+            }
         }
     }
     $(function(){

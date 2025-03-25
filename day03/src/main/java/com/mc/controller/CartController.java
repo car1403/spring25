@@ -25,5 +25,10 @@ public class CartController {
         model.addAttribute("center","cart");
         return "index";
     }
+    @RequestMapping("/del")
+    public String del(Model model, Cart cart) throws Exception {
+        cartService.del(cart);
+        return "redirect:/cart?id="+cart.getCustId();
+    }
 
 }
