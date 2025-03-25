@@ -35,5 +35,10 @@ public class CartController {
         cartService.mod(cart);
         return "redirect:/cart?id="+cart.getCustId();
     }
+    @RequestMapping("/add")
+    public String add(Model model, Cart cart) throws Exception {
+        cartService.add(cart);
+        return "redirect:/cart?id="+cart.getCustId();
+    }
 
 }

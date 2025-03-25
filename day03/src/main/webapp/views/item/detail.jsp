@@ -28,6 +28,17 @@
                 let total = cnt * ${item.itemPrice};
                 $('#total').html('Total: ' + total + ' 원');
             });
+            // restController 로 cart에 add 하는 기능
+            $('#add_bnt').click(()=>{
+
+            });
+            // Controller 로 cart에 add 하는 기능
+            $('#go_bnt').click(()=>{
+                let item_id = ${item.itemId};
+                let cust_id = ${sessionScope.cust.custId};
+                let cart_cnt = $('#cnt').val();
+                location.href='<c:url value="/cart/add?custId='+cust_id+'&cartCnt='+cart_cnt+'&itemId='+item_id+'"/>';
+            });
         }
     }
     $(function () {
@@ -81,7 +92,8 @@
 
             <!-- Modal footer -->
             <div class="modal-footer">
-                <button type="button" class="btn btn-danger">Add Cart</button>
+                <button type="button" class="btn btn-danger" id="add_bnt">Add Cart</button>
+                <button type="button" class="btn btn-danger" id="go_bnt">Go Cart</button>
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
             </div>
 
