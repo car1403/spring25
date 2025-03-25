@@ -70,11 +70,5 @@ public class MainController {
         return "index";
     }
 
-    @RequestMapping("/cart")
-    public String cart(Model model, @RequestParam("id") String id) throws Exception {
-        List<Cart> carts = cartService.findByUser(id);
-        model.addAttribute("carts",carts);
-        model.addAttribute("center","cart");
-        return "index";
-    }
+
 }

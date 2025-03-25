@@ -39,7 +39,7 @@ public class CartService implements MCService<Cart, Cart> {
 
     @Override
     public List<Cart> get() throws Exception {
-        return cartRepository.select();
+        return null;
     }
 
     public List<Cart> findByUser(String id) throws Exception {
