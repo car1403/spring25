@@ -35,7 +35,7 @@
             // Controller 로 cart에 add 하는 기능
             $('#go_bnt').click(()=>{
                 let item_id = ${item.itemId};
-                let cust_id = ${sessionScope.cust.custId};
+                let cust_id = '${sessionScope.cust.custId}';
                 let cart_cnt = $('#cnt').val();
                 location.href='<c:url value="/cart/add?custId='+cust_id+'&cartCnt='+cart_cnt+'&itemId='+item_id+'"/>';
             });

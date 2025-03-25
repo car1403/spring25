@@ -14,7 +14,7 @@
     <insert id="insert" parameterType="cart">
         INSERT INTO cart VALUES (#{custId}, #{itemId} , #{cartCnt} ,now())
         ON DUPLICATE KEY UPDATE
-        cart_cnt = cart_cnt + 1
+        cart_cnt = cart_cnt + #{cartCnt}
     </insert>
     <update id="update" parameterType="cart">
         UPDATE cart SET cart_cnt = #{cartCnt} WHERE cust_id=#{custId} AND item_id=#{itemId}
