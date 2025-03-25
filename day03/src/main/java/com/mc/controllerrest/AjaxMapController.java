@@ -1,6 +1,9 @@
 package com.mc.controllerrest;
 
 import com.mc.app.dto.Content;
+import com.mc.app.dto.Marker;
+import com.mc.app.service.MarkerService;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.json.simple.JSONObject;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,7 +16,11 @@ import java.util.Random;
 
 @RestController
 @Slf4j
+@RequiredArgsConstructor
 public class AjaxMapController {
+
+    final MarkerService markerService;
+
     @RequestMapping("/getlatlng")
     public Object getlatlng(){
         JSONObject obj = new JSONObject();
@@ -26,18 +33,11 @@ public class AjaxMapController {
         return obj;
     }
     @RequestMapping("/getcontent")
-    public Object getcontent(@RequestParam("target") int target){
-        List<Content> contents = new ArrayList<>();
-        if(target == 100){
-            contents.add(new Content(37.564472,126.990841,"순대국1", "ss1.jpg", 101));
-            contents.add(new Content(37.544472,126.970841,"순대국2", "ss2.jpg", 102));
-            contents.add(new Content(37.564472,126.970841,"순대국3", "ss3.jpg", 103));
-        }else if(target == 200){
+    public Object getcontent(@RequestParam("target") int target) throws Exception {
 
-        }else if(target == 300){
+        List<Marker> markers = markerService.findByTarget(target);
 
-        }
-        return contents;
+        return markers;
     }
 
     @RequestMapping("/getcontents")

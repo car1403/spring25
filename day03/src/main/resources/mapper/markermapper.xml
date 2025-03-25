@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mc.app.repository.MarkerRepository">
+    <select id="selectOne" parameterType="Integer" resultType="marker">
+        SELECT * FROM marker WHERE marker_id=#{markerId}
+    </select>
+    <select id="select" resultType="marker">
+        SELECT * FROM marker
+    </select>
+    <select id="findByTarget" resultType="marker" parameterType="Integer">
+        SELECT * FROM marker WHERE marker_target = ${markerTarget}
+    </select>
+    <insert id="insert" parameterType="marker">
+        INSERT INTO marker (marker_title, marker_lat, marker_lng, marker_img, marker_target)
+            VALUE (#{markerTitle},#{markerLat}, #{markerLng},, #{markerImg}, #{markerTarget})
+    </insert>
+    <update id="update" parameterType="marker">
+        UPDATE marker SET marker_title=#{markerTitle},marker_lat=#{markerLat}, marker_lng=${markerLng}, marker_img=${markerImg},marker_target=${markerTarget}
+                     WHERE marker_id=#{markerId}
+    </update>
+    <delete id="delete" parameterType="Integer">
+        DELETE FROM marker WHERE board_id=#{markerId}
+    </delete>
+
+</mapper>

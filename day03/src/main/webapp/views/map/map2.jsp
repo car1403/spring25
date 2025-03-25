@@ -88,23 +88,24 @@
             // 각 마커에 인포윈도우를 생성 하고
             // 각 마커에 이벤트를 등록 한다.
             let imgSrc1 = 'https://t1.daumcdn.net/localimg/localimages/07/2012/img/marker_p.png';
-            let imgSrc2 = '<c:url value="/img/m.jpg"/> ';
 
 
             let result = '';
 
             $(datas).each((index,item)=>{
+                let imgSrc2 = '<c:url value="/img/'+item.markerImg+'"/> ';
+
                 let imgSize = new kakao.maps.Size(30,30);
                 let markerImg = new kakao.maps.MarkerImage(imgSrc2, imgSize);
 
-                var markerPosition  = new kakao.maps.LatLng(item.lat, item.lng);
+                var markerPosition  = new kakao.maps.LatLng(item.markerLat, item.markerLng);
                 var marker = new kakao.maps.Marker({
                     image: markerImg,
                     map:map,
                     position: markerPosition
                 });
-                let iwContent = '<p>'+item.title+'</p>';
-                iwContent += '<img style="width:80px;" src="<c:url value="/img/'+item.img+'"/> ">';
+                let iwContent = '<p>'+item.markerTitle+'</p>';
+                iwContent += '<img style="width:80px;" src="<c:url value="/img/'+item.markerImg+'"/> ">';
 
                 var infowindow = new kakao.maps.InfoWindow({
                     content : iwContent,
@@ -118,14 +119,14 @@
                 });
                 kakao.maps.event.addListener(marker, 'click', function() {
                     // 127.0.0.1/map/go
-                    location.href = '<c:url value="/map/go?target='+item.target+'"/>';
+                    location.href = '<c:url value="/map/go?target='+item.markerId+'"/>';
                 });
 
                 // Make Content List
                 result += '<p>';
-                result += '<a href="<c:url value="/map/go?target='+item.target+'"/>">';
-                result += '<img width="20px" src="<c:url value="/img/'+item.img+'"/> ">';
-                result += item.target+' '+item.title;
+                result += '<a href="<c:url value="/map/go?target='+item.markerId+'"/>">';
+                result += '<img width="20px" src="<c:url value="/img/'+item.markerImg+'"/> ">';
+                result += item.markerId+' '+item.markerTitle;
                 result += '</a>';
                 result += '</p>';
             });
