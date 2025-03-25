@@ -17,7 +17,7 @@
         cart_cnt = cart_cnt + 1
     </insert>
     <update id="update" parameterType="cart">
-
+        UPDATE cart SET cart_cnt = #{cartCnt} WHERE cust_id=#{custId} AND item_id=#{itemId}
     </update>
     <delete id="delete" parameterType="cart">
         DELETE FROM cart WHERE cust_id=#{custId} AND item_id=#{itemId}

@@ -5,6 +5,9 @@
     #cart_item_img{
         width:30px;
     }
+    #cart_cnt{
+        width:80px;
+    }
 </style>
 <script>
     const cart = {
@@ -17,6 +20,14 @@
             if(c == true){
                 //location.href='/cart/del?custId='+cust_id+'&itemId='+item_id;
                 location.href='<c:url value="/cart/del?custId='+cust_id+'&itemId='+item_id+'"/>';
+            }
+        },
+        mod:function(item_id){
+            let c = confirm('수정 하시겠습니까 ?');
+            if(c == true){
+                let cust_id = '${sessionScope.cust.custId}';
+                let cart_cnt = $('#cart_cnt').val();
+                location.href='<c:url value="/cart/mod?custId='+cust_id+'&cartCnt='+cart_cnt+'&itemId='+item_id+'"/>';
             }
         }
     }
@@ -44,10 +55,10 @@
                 <td><img id="cart_item_img" src="<c:url value="/img/${c.itemImgname}"/>"></td>
                 <td>${c.itemName}</td>
                 <td><fmt:formatNumber type="number" pattern="#,###" value="${c.itemPrice}" /></td>
-                <td>${c.cartCnt}</td>
+                <td><input id="cart_cnt" type="number" value="${c.cartCnt}"></td>
                 <td><fmt:formatDate  value="${c.itemRdate}" pattern="yyyy-MM-dd" /> </td>
                 <td>
-                    <button id="cart_mod_btn" class="btn btn-danger">UPDATE</button>
+                    <button id="cart_mod_btn" class="btn btn-danger" onclick="cart.mod(${c.itemId})">UPDATE</button>
                 </td>
                 <td>
                     <button id="cart_del_btn" class="btn btn-primary" onclick="cart.del(${c.itemId});">DELETE</button>

@@ -24,7 +24,7 @@ public class CartService implements MCService<Cart, Cart> {
 
     @Override
     public void mod(Cart cart) throws Exception {
-
+        cartRepository.update(cart);
     }
 
     @Override
