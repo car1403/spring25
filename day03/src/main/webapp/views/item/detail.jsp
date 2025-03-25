@@ -30,7 +30,18 @@
             });
             // restController 로 cart에 add 하는 기능
             $('#add_bnt').click(()=>{
+                let item_id = ${item.itemId};
+                let cust_id = '${sessionScope.cust.custId}';
+                let cart_cnt = $('#cnt').val();
+                $('#myModal').modal('hide');
 
+                $.ajax({
+                    url:'/cartaddimpl',
+                    data:{custId:cust_id, itemId:item_id, cartCnt:cart_cnt},
+                    success:(result)=>{
+                        result ? alert('정상등록') : alert('등록 실패');
+                    }
+                });
             });
             // Controller 로 cart에 add 하는 기능
             $('#go_bnt').click(()=>{
@@ -62,7 +73,7 @@
         </div>
         <div class="col-sm-3">
             <!-- Button to Open the Modal -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+            <button type="button"  data-backdrop="static" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
                 Open modal
             </button>
         </div>

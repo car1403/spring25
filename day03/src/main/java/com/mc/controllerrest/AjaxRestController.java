@@ -1,6 +1,8 @@
 package com.mc.controllerrest;
 
+import com.mc.app.dto.Cart;
 import com.mc.app.dto.Cust;
+import com.mc.app.service.CartService;
 import com.mc.app.service.CustService;
 import com.mc.util.WeatherUtil;
 import lombok.RequiredArgsConstructor;
@@ -24,11 +26,27 @@ import java.util.Random;
 public class AjaxRestController {
 
     final CustService custService;
+    final CartService cartService;
 
     @Value("${app.key.wkey}")
     String wkey;
     @Value("${app.key.wkey2}")
     String wkey2;
+
+    @RequestMapping("/cartaddimpl")
+    public Object cartaddimpl(Cart cart) throws Exception {
+        log.info("cartaddimpl"+cart.toString());
+        int result = 1;
+        try{
+            cartService.add(cart);
+        }catch (Exception e){
+            result = 0;
+            throw e;
+        }
+
+
+        return result;
+    }
 
     @RequestMapping("/checkid")
     public Object checkid(@RequestParam("cid") String cid) throws Exception {
