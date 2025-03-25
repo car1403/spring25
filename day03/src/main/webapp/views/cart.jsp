@@ -26,7 +26,7 @@
             let c = confirm('수정 하시겠습니까 ?');
             if(c == true){
                 let cust_id = '${sessionScope.cust.custId}';
-                let cart_cnt = $('#cart_cnt').val();
+                let cart_cnt = $('#'+item_id).val();
                 location.href='<c:url value="/cart/mod?custId='+cust_id+'&cartCnt='+cart_cnt+'&itemId='+item_id+'"/>';
             }
         }
@@ -55,7 +55,7 @@
                 <td><img id="cart_item_img" src="<c:url value="/img/${c.itemImgname}"/>"></td>
                 <td>${c.itemName}</td>
                 <td><fmt:formatNumber type="number" pattern="#,###" value="${c.itemPrice}" /></td>
-                <td><input id="cart_cnt" type="number" value="${c.cartCnt}"></td>
+                <td><input id="${c.itemId}" type="number" value="${c.cartCnt}"></td>
                 <td><fmt:formatDate  value="${c.itemRdate}" pattern="yyyy-MM-dd" /> </td>
                 <td>
                     <button id="cart_mod_btn" class="btn btn-danger" onclick="cart.mod(${c.itemId})">UPDATE</button>
