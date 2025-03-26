@@ -6,6 +6,8 @@ import jakarta.servlet.http.HttpSession;
 import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.jasypt.encryption.pbe.StandardPBEStringEncryptor;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,10 +19,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class LoginController {
 
     final CustService custService;
+    final BCryptPasswordEncoder bCryptPasswordEncoder;
+    final StandardPBEStringEncryptor standardPBEStringEncryptor;
 
     @RequestMapping("/goregister")
     public String goregister(Model model, Cust cust) throws Exception {
         log.info(cust.toString());
+        cust.setCustPwd(bCryptPasswordEncoder.encode(cust.getCustPwd()));
+        cust.setCustName(standardPBEStringEncryptor.encrypt(cust.getCustName()));
         custService.add(cust);
         model.addAttribute("center","login");
         return "index";
@@ -30,7 +36,7 @@ public class LoginController {
                           @RequestParam("pwd") String pwd,
                           HttpSession httpSession) throws Exception {
         Cust dbCust = custService.get(id);
-        if(dbCust != null && dbCust.getCustPwd().equals(pwd)){
+        if(dbCust != null && bCryptPasswordEncoder.matches(pwd, dbCust.getCustPwd())){
             httpSession.setAttribute("cust",dbCust);
             return "redirect:/";
         }
@@ -50,6 +56,7 @@ public class LoginController {
     @RequestMapping("/custinfo")
     public String custinfo(Model model, @RequestParam("id") String id) throws Exception {
         Cust dbCust = custService.get(id);
+        dbCust.setCustName(standardPBEStringEncryptor.decrypt(dbCust.getCustName()));
         if(dbCust != null){
             model.addAttribute("cust",dbCust);
         }
@@ -58,6 +65,15 @@ public class LoginController {
     }
     @RequestMapping("/updatecustinfo")
     public String updatecustinfo(Model model, Cust cust) throws Exception {
+
+        boolean result = bCryptPasswordEncoder.matches(cust.getCustPwd(),
+                custService.get(cust.getCustId()).getCustPwd());
+        if(result != true){
+            model.addAttribute("msg","비밀번호가 틀렸습니다.");
+            model.addAttribute("center","error");
+            return "index";
+        }
+        cust.setCustName(standardPBEStringEncryptor.encrypt(cust.getCustName()));
         custService.mod(cust);
         model.addAttribute("cust",cust);
         model.addAttribute("center","custinfo");

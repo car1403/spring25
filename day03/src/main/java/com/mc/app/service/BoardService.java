@@ -50,6 +50,9 @@ public class BoardService implements MCService<Board, Integer> {
         PageHelper.startPage(pageNo, 3); // 3: 한화면에 출력되는 개수
         return boardRepository.getpage();
     }
+    public List<Board> mainSelect() throws Exception{
+        return boardRepository.mainSelect();
+    }
 }
 
 

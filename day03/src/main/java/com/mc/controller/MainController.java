@@ -26,7 +26,7 @@ public class MainController {
     public String main(Model model) throws Exception {
         // 데이터베이스에서 가지고 온다.
         List<Board> boards = null;
-        boards = boardService.get();
+        boards = boardService.mainSelect();
         model.addAttribute("boards", boards);
         return "index";
     }

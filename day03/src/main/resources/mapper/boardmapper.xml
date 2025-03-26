@@ -9,6 +9,9 @@
     <select id="select" resultType="board">
         SELECT * FROM board
     </select>
+    <select id="mainSelect" resultType="board">
+        SELECT * FROM board ORDER BY board_rdate DESC LIMIT 5
+    </select>
     <select id="getpage" resultType="board">
         SELECT * FROM board
     </select>

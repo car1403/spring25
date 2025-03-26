@@ -5,15 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b991fd35-e78c-4f07-aeca-087106655e3e" name="Changes" comment="2025.3.26">
-      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/board/allpage.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/page.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/error.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day03/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/day03/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day03/src/main/java/com/mc/app/repository/BoardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/app/repository/BoardRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day03/src/main/java/com/mc/app/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/app/service/BoardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03/src/main/java/com/mc/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/controller/BoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/src/main/java/com/mc/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/src/main/java/com/mc/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/resources/application-dev.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day03/src/main/resources/mapper/boardmapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/resources/mapper/boardmapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03/src/main/webapp/views/board/left.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/board/left.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/src/main/resources/mapper/custmapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/resources/mapper/custmapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/src/main/webapp/views/center.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/center.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/src/main/webapp/views/custinfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/custinfo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/src/test/java/com/mc/Day03ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/test/java/com/mc/Day03ApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,8 +94,8 @@
         <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -121,6 +126,7 @@
     "Gradle.Build day03.executor": "Run",
     "Gradle.Day01ApplicationTests.executor": "Run",
     "Gradle.Day02ApplicationTests.executor": "Run",
+    "Gradle.Day03ApplicationTests.executor": "Run",
     "Gradle.Delete.executor": "Run",
     "Gradle.Download Sources.executor": "Run",
     "Gradle.Hit.executor": "Run",
@@ -152,7 +158,7 @@
     "extract.method.default.visibility": "private",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/spring25/day03/src/main/webapp/views/board",
+    "last_opened_file_path": "D:/spring25/day03/src/main/webapp/views",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -168,11 +174,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\spring25\day03\src\main\webapp\views" />
+      <recent name="D:\spring25\day03\src\main\webapp\views\cust" />
       <recent name="D:\spring25\day03\src\main\webapp\views\board" />
       <recent name="D:\spring25\day03\src\main\resources\static\img" />
       <recent name="D:\spring25\day03\src\main\resources\mapper" />
-      <recent name="D:\spring25\day03\src\main\webapp\views" />
-      <recent name="D:\spring25\day03\src\test\java\com\mc\cart" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\spring25\day02ws1\src\main\resources\static\img" />
@@ -186,6 +192,30 @@
     </key>
   </component>
   <component name="RunManager" selected="Gradle.day03 [bootRun]">
+    <configuration name="Day03ApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/day03" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.mc.Day03ApplicationTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="Delete" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -224,30 +254,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;com.mc.cart.Insert&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="Select (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/day03" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.mc.cart.Select&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -369,10 +375,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.day03 [bootRun]" />
+        <item itemvalue="Gradle.Day03ApplicationTests" />
         <item itemvalue="Gradle.Update" />
         <item itemvalue="Gradle.Insert" />
         <item itemvalue="Gradle.Delete" />
-        <item itemvalue="Gradle.Select (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -407,15 +413,7 @@
       <workItem from="1742429411547" duration="38203000" />
       <workItem from="1742772168311" duration="20141000" />
       <workItem from="1742860677533" duration="22688000" />
-      <workItem from="1742946156366" duration="5021000" />
-    </task>
-    <task id="LOCAL-00062" summary="2025.3.18">
-      <option name="closed" value="true" />
-      <created>1742262304325</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1742262304325</updated>
+      <workItem from="1742946156366" duration="11199000" />
     </task>
     <task id="LOCAL-00063" summary="2025.3.18">
       <option name="closed" value="true" />
@@ -801,7 +799,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742950957640</updated>
     </task>
-    <option name="localTasksCounter" value="111" />
+    <task id="LOCAL-00111" summary="2025.3.26">
+      <option name="closed" value="true" />
+      <created>1742953433717</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1742953433717</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

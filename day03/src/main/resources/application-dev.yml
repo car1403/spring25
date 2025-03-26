@@ -34,7 +34,8 @@ app:
   key:
     wkey: ENC(Z/iDgLx1J/KFF7LMZneNJzA8rD5wG4kyMH+aMIMnop55VBcXKHxQom3mrPjqYk/GRY5vdB/hIhVN9ggeVON+bX/g0DyWcxzMmXT0AMYgNAzZPulzu98OdTmDwVD/tIzITBQVSNm/nPcxxfPzMsi68A==)
     wkey2: ENC(O1E5fpcaV+/9j8tu0P5YVC7R8+3QFNo5MYtlOm+It0QaXOAR2thzmsNzeKxH0aXc)
-
+    algo: PBEWithMD5AndDES  # Twoway
+    skey: mykey             # Twoway
 
 
 
