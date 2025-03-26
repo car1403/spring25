@@ -9,6 +9,9 @@
             <a class="nav-link" href="<c:url value="/board/get"/>">get</a>
         </li>
         <li class="nav-item">
+            <a class="nav-link" href="<c:url value="/board/allpage"/>">getpage</a>
+        </li>
+        <li class="nav-item">
             <a class="nav-link" href="<c:url value="/board/add"/>">add</a>
         </li>
 

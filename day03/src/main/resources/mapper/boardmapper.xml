@@ -9,6 +9,9 @@
     <select id="select" resultType="board">
         SELECT * FROM board
     </select>
+    <select id="getpage" resultType="board">
+        SELECT * FROM board
+    </select>
     <insert id="insert" parameterType="board">
         INSERT INTO board (board_title, board_content, board_author)
             VALUE (#{boardTitle},#{boardContent}, #{boardAuthor})

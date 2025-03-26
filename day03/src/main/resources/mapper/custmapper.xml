@@ -6,6 +6,9 @@
     <select id="selectOne" parameterType="String" resultType="cust">
         SELECT * FROM cust WHERE cust_id=#{custId}
     </select>
+    <select id="getpage" resultType="cust">
+        SELECT * FROM cust
+    </select>
     <select id="select" resultType="cust">
         SELECT * FROM cust
     </select>

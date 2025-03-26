@@ -1,5 +1,8 @@
 package com.mc.app.service;
 
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageHelper;
+import com.mc.app.dto.Board;
 import com.mc.app.dto.Cust;
 import com.mc.app.frame.MCRepository;
 import com.mc.app.frame.MCService;
@@ -40,5 +43,9 @@ public class CustService implements MCService<Cust, String> {
     @Override
     public List<Cust> get() throws Exception {
         return custRepository.select();
+    }
+    public Page<Cust> getPage(int pageNo) throws Exception {
+        PageHelper.startPage(pageNo, 3); // 3: 한화면에 출력되는 개수
+        return custRepository.getpage();
     }
 }

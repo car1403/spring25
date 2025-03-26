@@ -1,5 +1,6 @@
 package com.mc.controller;
 
+import com.github.pagehelper.PageInfo;
 import com.mc.app.dto.Board;
 import com.mc.app.service.BoardService;
 import lombok.RequiredArgsConstructor;
@@ -34,6 +35,22 @@ public class BoardController {
         model.addAttribute("boards", boards);
         model.addAttribute("left", dir + "left");
         model.addAttribute("center", dir + "get");
+        return "index";
+    }
+    @RequestMapping("/allpage")
+    public String allpage(@RequestParam(value="pageNo", defaultValue = "1") int pageNo, Model model) throws Exception {
+
+        PageInfo<Board> boards;
+        try {
+            boards = new PageInfo<>(boardService.getPage(pageNo), 3); // 5:하단 네비게이션 개수
+        } catch (Exception e) {
+            throw new Exception("시스템 장애: ER0001");
+        }
+
+        model.addAttribute("cpage", boards);
+        model.addAttribute("target", "/board");
+        model.addAttribute("left", dir + "left");
+        model.addAttribute("center", dir + "allpage");
         return "index";
     }
     @RequestMapping("/add")

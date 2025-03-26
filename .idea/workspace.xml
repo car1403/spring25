@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b991fd35-e78c-4f07-aeca-087106655e3e" name="Changes" comment="2025.3.25">
-      <change afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/config/JasyptConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="b991fd35-e78c-4f07-aeca-087106655e3e" name="Changes" comment="2025.3.26">
+      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/board/allpage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/page.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day03/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/day03/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03/src/main/webapp/views/map/map2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/map/map2.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/src/main/java/com/mc/app/repository/BoardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/app/repository/BoardRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/src/main/java/com/mc/app/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/app/service/BoardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/src/main/java/com/mc/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/controller/BoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/src/main/resources/mapper/boardmapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/resources/mapper/boardmapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/src/main/webapp/views/board/left.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/board/left.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,9 +88,9 @@
       <list>
         <option value="CSS File" />
         <option value="JavaScript File" />
-        <option value="Jsp File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -108,68 +111,68 @@
     <option name="flattenModules" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.ApiExplorer.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build day01.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build day02.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build day02ws1.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build day02ws2.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build day03.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Day01ApplicationTests.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Day02ApplicationTests.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Delete.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Hit.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Insert (1).executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Insert (2).executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Insert.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Select (1).executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Select (2).executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Select.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.SelectOne (1).executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.SelectOne.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Update (1).executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Update.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Weather2ApplicationTests.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.WeatherApplicationTests.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.WeatherForeCastApplicationTests.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.day01 [bootRun].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.day02 [bootRun].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.day02ws1 [bootRun].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.day02ws2 [bootRun].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.day03 [bootRun].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.day03 [war].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.Day01Application.executor&quot;: &quot;Run&quot;,
-    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/spring25/day03/src/main/resources/static/img&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.41657078&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.ApiExplorer.executor": "Run",
+    "Gradle.Build day01.executor": "Run",
+    "Gradle.Build day02.executor": "Run",
+    "Gradle.Build day02ws1.executor": "Run",
+    "Gradle.Build day02ws2.executor": "Run",
+    "Gradle.Build day03.executor": "Run",
+    "Gradle.Day01ApplicationTests.executor": "Run",
+    "Gradle.Day02ApplicationTests.executor": "Run",
+    "Gradle.Delete.executor": "Run",
+    "Gradle.Download Sources.executor": "Run",
+    "Gradle.Hit.executor": "Run",
+    "Gradle.Insert (1).executor": "Run",
+    "Gradle.Insert (2).executor": "Run",
+    "Gradle.Insert.executor": "Run",
+    "Gradle.Select (1).executor": "Run",
+    "Gradle.Select (2).executor": "Run",
+    "Gradle.Select.executor": "Run",
+    "Gradle.SelectOne (1).executor": "Run",
+    "Gradle.SelectOne.executor": "Run",
+    "Gradle.Update (1).executor": "Run",
+    "Gradle.Update.executor": "Run",
+    "Gradle.Weather2ApplicationTests.executor": "Run",
+    "Gradle.WeatherApplicationTests.executor": "Run",
+    "Gradle.WeatherForeCastApplicationTests.executor": "Run",
+    "Gradle.day01 [bootRun].executor": "Run",
+    "Gradle.day02 [bootRun].executor": "Run",
+    "Gradle.day02ws1 [bootRun].executor": "Run",
+    "Gradle.day02ws2 [bootRun].executor": "Run",
+    "Gradle.day03 [bootRun].executor": "Run",
+    "Gradle.day03 [war].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.Day01Application.executor": "Run",
+    "extract.method.default.visibility": "private",
+    "jdk.selected.JAVA_MODULE": "17",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/spring25/day03/src/main/webapp/views/board",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Global Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.41657078",
+    "settings.editor.selected.configurable": "fileTemplates",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\spring25\day03\src\main\webapp\views\board" />
       <recent name="D:\spring25\day03\src\main\resources\static\img" />
       <recent name="D:\spring25\day03\src\main\resources\mapper" />
       <recent name="D:\spring25\day03\src\main\webapp\views" />
       <recent name="D:\spring25\day03\src\test\java\com\mc\cart" />
-      <recent name="D:\spring25\day03\src\main\webapp\views\item" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\spring25\day02ws1\src\main\resources\static\img" />
@@ -404,15 +407,7 @@
       <workItem from="1742429411547" duration="38203000" />
       <workItem from="1742772168311" duration="20141000" />
       <workItem from="1742860677533" duration="22688000" />
-      <workItem from="1742946156366" duration="2303000" />
-    </task>
-    <task id="LOCAL-00061" summary="2025.3.18">
-      <option name="closed" value="true" />
-      <created>1742261777578</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1742261777578</updated>
+      <workItem from="1742946156366" duration="5021000" />
     </task>
     <task id="LOCAL-00062" summary="2025.3.18">
       <option name="closed" value="true" />
@@ -798,7 +793,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742889787605</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="2025.3.26">
+      <option name="closed" value="true" />
+      <created>1742950957639</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1742950957640</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -832,7 +835,8 @@
     <MESSAGE value="2025.3.21" />
     <MESSAGE value="2025.3.24" />
     <MESSAGE value="2025.3.25" />
-    <option name="LAST_COMMIT_MESSAGE" value="2025.3.25" />
+    <MESSAGE value="2025.3.26" />
+    <option name="LAST_COMMIT_MESSAGE" value="2025.3.26" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

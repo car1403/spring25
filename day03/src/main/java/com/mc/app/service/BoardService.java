@@ -1,5 +1,7 @@
 package com.mc.app.service;
 
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageHelper;
 import com.mc.app.dto.Board;
 import com.mc.app.dto.Cust;
 import com.mc.app.frame.MCService;
@@ -43,6 +45,10 @@ public class BoardService implements MCService<Board, Integer> {
 
     public void hit(Integer id) throws Exception {
         boardRepository.updateHit(id);
+    }
+    public Page<Board> getPage(int pageNo) throws Exception {
+        PageHelper.startPage(pageNo, 3); // 3: 한화면에 출력되는 개수
+        return boardRepository.getpage();
     }
 }
 
