@@ -75,8 +75,6 @@ public class LoginController {
         }
         cust.setCustName(standardPBEStringEncryptor.encrypt(cust.getCustName()));
         custService.mod(cust);
-        model.addAttribute("cust",cust);
-        model.addAttribute("center","custinfo");
-        return "index";
+        return "redirect:/custinfo?id=" + cust.getCustId();
     }
 }
