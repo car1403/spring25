@@ -7,6 +7,8 @@ import com.mc.app.service.BoardService;
 import com.mc.app.service.CustService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.jasypt.encryption.pbe.StandardPBEStringEncryptor;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,6 +22,8 @@ import java.util.List;
 @RequestMapping("/cust")
 public class CustController {
     final CustService custService;
+    final BCryptPasswordEncoder bCryptPasswordEncoder;
+    final StandardPBEStringEncryptor standardPBEStringEncryptor;
 
     String dir = "cust/";
 
@@ -34,6 +38,7 @@ public class CustController {
     public String get(Model model) throws Exception {
         List<Cust> custs = null;
         custs = custService.get();
+        custs.forEach(cust -> cust.setCustName(standardPBEStringEncryptor.decrypt(cust.getCustName())));
         model.addAttribute("custs", custs);
         model.addAttribute("left", dir + "left");
         model.addAttribute("center", dir + "get");
@@ -45,6 +50,7 @@ public class CustController {
         PageInfo<Cust> custs;
         try {
             custs = new PageInfo<>(custService.getPage(pageNo), 3); // 5:하단 네비게이션 개수
+
         } catch (Exception e) {
             throw new Exception("시스템 장애: ER0001");
         }
@@ -63,12 +69,15 @@ public class CustController {
     }
     @RequestMapping("/addimpl")
     public String addimpl(Model model, Cust cust) throws Exception {
+        cust.setCustPwd(bCryptPasswordEncoder.encode(cust.getCustPwd()));
+        cust.setCustName(standardPBEStringEncryptor.encrypt(cust.getCustName()));
         custService.add(cust);
         return "redirect:/cust/get";
     }
     @RequestMapping("/detail")
     public String detail(Model model, @RequestParam("id") String id) throws Exception {
         Cust cust = custService.get(id);
+        cust.setCustName(standardPBEStringEncryptor.decrypt(cust.getCustName()));
         model.addAttribute("cust",cust);
         model.addAttribute("left", dir + "left");
         model.addAttribute("center", dir + "detail");
@@ -82,6 +91,7 @@ public class CustController {
     }
     @RequestMapping("/updateimpl")
     public String updateimpl(Model model, Cust cust) throws Exception {
+        cust.setCustName(standardPBEStringEncryptor.encrypt(cust.getCustName()));
         custService.mod(cust);
         return "redirect:/cust/detail?id="+cust.getCustId();
     }

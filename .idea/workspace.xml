@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b991fd35-e78c-4f07-aeca-087106655e3e" name="Changes" comment="2025.3.26">
-      <change beforePath="$PROJECT_DIR$/day03/src/main/java/com/mc/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/src/main/java/com/mc/controller/CustController.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/controller/CustController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/src/test/java/com/mc/cust/Select.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/test/java/com/mc/cust/Select.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,30 +205,6 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="Delete" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/day03" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.mc.cart.Delete&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="Insert" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -241,6 +219,30 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;com.mc.cart.Insert&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Select" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/day03" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.mc.cust.Select&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -362,10 +364,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.day03 [bootRun]" />
+        <item itemvalue="Gradle.Select" />
         <item itemvalue="Gradle.Day03ApplicationTests" />
         <item itemvalue="Gradle.Update" />
         <item itemvalue="Gradle.Insert" />
-        <item itemvalue="Gradle.Delete" />
       </list>
     </recent_temporary>
   </component>
@@ -400,15 +402,7 @@
       <workItem from="1742429411547" duration="38203000" />
       <workItem from="1742772168311" duration="20141000" />
       <workItem from="1742860677533" duration="22688000" />
-      <workItem from="1742946156366" duration="12048000" />
-    </task>
-    <task id="LOCAL-00064" summary="2025.3.18">
-      <option name="closed" value="true" />
-      <created>1742264387397</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1742264387398</updated>
+      <workItem from="1742946156366" duration="16310000" />
     </task>
     <task id="LOCAL-00065" summary="2025.3.18">
       <option name="closed" value="true" />
@@ -794,7 +788,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742963957020</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="2025.3.26">
+      <option name="closed" value="true" />
+      <created>1742965406841</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1742965406842</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
