@@ -88,8 +88,6 @@
             // 각 마커에 인포윈도우를 생성 하고
             // 각 마커에 이벤트를 등록 한다.
             let imgSrc1 = 'https://t1.daumcdn.net/localimg/localimages/07/2012/img/marker_p.png';
-
-
             let result = '';
 
             $(datas).each((index,item)=>{
