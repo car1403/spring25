@@ -343,7 +343,7 @@
                                 <li class="nav-item dropdown no-arrow">
                                     <a class="nav-link dropdown-toggle" href="#" role="button"
                                         aria-haspopup="true" aria-expanded="false">
-                                        <span class="mr-2 d-none d-lg-inline text-gray-600 small">${sessionScope.admin.id}</span>
+                                        <span class="mr-2 d-none d-lg-inline text-gray-600 small">${sessionScope.admin}</span>
                                         <img class="img-profile rounded-circle"
                                              src="<c:url value="/img/undraw_profile.svg"/>">
 
@@ -352,10 +352,10 @@
                                     <!-- Dropdown - User Information -->
                                 </li>
                                 <li class="nav-item dropdown no-arrow">
-                                    <span class="mr-2 d-none d-lg-inline text-gray-600 small">${sessionScope.admin.role.roleName}</span>
+                                    <span class="mr-2 d-none d-lg-inline text-gray-600 small">${sessionScope.admin}</span>
                                 </li>
                                 <li class="nav-item dropdown no-arrow">
-                                    <a href="<c:url value="/logout"/>" role="button"
+                                    <a href="<c:url value="/logoutimpl"/>" role="button"
                                        aria-haspopup="true" aria-expanded="false">LOGOUT</a>
                                 </li>
                             </c:otherwise>
