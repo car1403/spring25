@@ -30,25 +30,17 @@
                         <th>Name</th>
                         <th>Price</th>
                         <th>Reg Date</th>
-                        <th>Update Date</th>
+
                     </tr>
                     </thead>
-                    <tfoot>
-                    <tr>
-                        <th>Image</th>
-                        <th>Id</th>
-                        <th>Name</th>
-                        <th>Price</th>
-                        <th>Reg Date</th>
-                        <th>Update Date</th>
-                    </tr>
-                    </tfoot>
+
                     <tbody>
                     <c:forEach var="item" items="${itemlist}">
                         <tr>
                             <td>
                                 <a href="<c:url value="/item/detail"/>?id=${item.itemId}">
-                                    <img  src="<c:url value="/imgs"/>/${item.imgName}">
+<%--                                    <img  src="<c:url value="/imgs"/>/${item.itemImgname}">--%>
+                                    ${item.itemImgname}
                                 </a>
                             </td>
                             <td>${item.itemId}</td>
@@ -56,11 +48,9 @@
                             <td>
                                 <fmt:formatNumber type="number" pattern="###,###원" value="${item.itemPrice}" />                           </td>
                             <td>
-                                ${item.regDate}
+                                <fmt:formatDate  value="${item.itemRdate}" pattern="yyyy-MM-dd" />
                             </td>
-                            <td>
-                                ${item.updateDate}
-                            </td>
+
                         </tr>
                     </c:forEach>
                     </tbody>
