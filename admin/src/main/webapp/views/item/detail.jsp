@@ -61,19 +61,13 @@
                     </div>
                     <div class="form-group">
                         <h6>
-                            <fmt:parseDate value="${ item.regDate }"
-                                           pattern="yyyy-MM-dd" var="parsedDateTime" type="both" />
-                            <fmt:formatDate pattern="yyyy년 MM월 dd일" value="${ parsedDateTime }" />
+                            <fmt:formatDate pattern="yyyy년 MM월 dd일" value="${ item.itemRdate }" />
                         </h6>
-                        <h6>
-                            <fmt:parseDate value="${ item.updateDate }"
-                                           pattern="yyyy-MM-dd" var="parsedDateTime" type="both" />
-                            <fmt:formatDate pattern="yyyy년 MM월 dd일" value="${ parsedDateTime }" />
-                        </h6>
+
                     </div>
                     <div class="form-group">
-                       <img src="<c:url value="/imgs"/>/${item.imgName}">
-                       <input type="hidden" name="imgName" value="${item.imgName}"/>
+                       <img src="<c:url value="/imgs"/>/${item.itemImgname}">
+                       <input type="hidden" name="itemImgname" value="${item.itemImgname}"/>
                     </div>
                     <div class="form-group">
                         <label for="newimage">New Image:</label>
