@@ -25,7 +25,7 @@
         <tbody>
         <c:forEach var="i" items="${items}">
             <tr>
-                <td><img id="item_img" src="<c:url value="/img/${i.itemImgname}"/>"></td>
+                <td><img id="item_img" src="<c:url value="/imgs/${i.itemImgname}"/>"></td>
                 <td><a href="<c:url value="/item/detail?id=${i.itemId}"/>">${i.itemName}</a></td>
                 <td><fmt:formatNumber type="number" pattern="#,###" value="${i.itemPrice}" /></td>
                 <td><fmt:formatDate  value="${i.itemRdate}" pattern="yyyy-MM-dd" /> </td>

@@ -36,6 +36,9 @@ app:
     wkey2: ENC(O1E5fpcaV+/9j8tu0P5YVC7R8+3QFNo5MYtlOm+It0QaXOAR2thzmsNzeKxH0aXc)
     algo: PBEWithMD5AndDES  # Twoway
     skey: mykey             # Twoway
+  dir:
+    imgdir: file:///D:/spring25/imgs/  # 화면 출력 용
+    uploadimgdir: D:/spring25/imgs/    # 파일 Write 용
 
 
 

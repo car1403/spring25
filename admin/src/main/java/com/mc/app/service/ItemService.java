@@ -35,7 +35,6 @@ public class ItemService implements MCService<Item, Integer> {
         // 2. 새로운 이미지가 있을때
         else{
             FileUploadUtil.deleteFile(item.getItemImgname(), uploadDir);
-
             item.setItemImgname(item.getImage().getOriginalFilename());
             itemRepository.update(item);
             FileUploadUtil.saveFile(item.getImage(), uploadDir);
