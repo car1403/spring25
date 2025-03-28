@@ -112,6 +112,27 @@
                 Interface
             </div>
 <%--            <c:if test="${sessionScope.admin.role.roleId == 1 || sessionScope.admin.role.roleId == 2}">--%>
+                <c:if test="${sessionScope.admin != null}">
+                    <!-- Nav Board - Pages Collapse Menu -->
+                    <li class="nav-item">
+                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne"
+                           aria-expanded="true" aria-controls="collapseOne">
+                            <i class="fas fa-fw fa-cog"></i>
+                            <span>Board</span>
+                        </a>
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <h6 class="collapse-header">Board Management:</h6>
+                                <a class="collapse-item" href="<c:url value="/board/add"/>">Add</a>
+                                <a class="collapse-item" href="<c:url value="/board/get"/>">Get</a>
+
+                            </div>
+                        </div>
+                    </li>
+                </c:if>
+
+
+
                 <!-- Nav Item - Pages Collapse Menu -->
                 <li class="nav-item">
                     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
@@ -418,12 +439,12 @@
                     <form id="login_form">
                         <div class="form-group">
                             <label for="id">ID:</label>
-                            <input type="text" class="form-control" id="id" placeholder="Enter id" name="id">
+                            <input type="text" class="form-control" id="id" placeholder="Enter id" name="id" value="admin">
 
                         </div>
                         <div class="form-group">
                             <label for="pwd">Password:</label>
-                            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" value="111111">
 
                         </div>
 
