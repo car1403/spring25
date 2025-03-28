@@ -51,4 +51,9 @@ public class ItemController {
         itemService.del(id);
         return "redirect:/item/get";
     }
+    @RequestMapping("/update")
+    public String update(Model model, Item item) throws Exception {
+        itemService.mod(item);
+        return "redirect:/item/detail?id="+item.getItemId();
+    }
 }

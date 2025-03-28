@@ -28,7 +28,18 @@ public class ItemService implements MCService<Item, Integer> {
 
     @Override
     public void mod(Item item) throws Exception {
-        itemRepository.update(item);
+        // 1. 새로운 이미지가 없을때
+        if(item.getImage().isEmpty()){
+            itemRepository.update(item);
+        }
+        // 2. 새로운 이미지가 있을때
+        else{
+            FileUploadUtil.deleteFile(item.getItemImgname(), uploadDir);
+
+            item.setItemImgname(item.getImage().getOriginalFilename());
+            itemRepository.update(item);
+            FileUploadUtil.saveFile(item.getImage(), uploadDir);
+        }
     }
 
     @Override
