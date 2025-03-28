@@ -3,7 +3,9 @@ package com.mc.app.service;
 import com.mc.app.dto.Item;
 import com.mc.app.frame.MCService;
 import com.mc.app.repository.ItemRepository;
+import com.mc.util.FileUploadUtil;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -14,8 +16,13 @@ public class ItemService implements MCService<Item, Integer> {
 
     final ItemRepository itemRepository;
 
+    @Value("${app.dir.uploadimgdir}")
+    String uploadDir;
+
     @Override
     public void add(Item item) throws Exception {
+        item.setItemImgname(item.getImage().getOriginalFilename());
+        FileUploadUtil.saveFile(item.getImage(), uploadDir);
         itemRepository.insert(item);
     }
 

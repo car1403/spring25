@@ -11,6 +11,9 @@
     </select>
     <insert id="insert" parameterType="item">
         INSERT INTO item VALUES (null ,#{itemName},#{itemPrice}, #{itemImgname}, now())
+        <selectKey keyProperty="itemId" resultType="Integer" order="AFTER">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
     </insert>
     <update id="update" parameterType="item">
         UPDATE item SET item_name=#{itemName},item_price=#{itemPrice},item_imgname=#{itemImgname} WHERE item_id=#{itemId}

@@ -4,16 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b991fd35-e78c-4f07-aeca-087106655e3e" name="Changes" comment="2025.3.27">
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/mc/app/repository/BoardRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/mc/app/service/BoardService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/mc/controller/BoardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/resources/mapper/boardmapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/views/board/add.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/views/board/detail.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/views/board/get.jsp" afterDir="false" />
+    <list default="true" id="b991fd35-e78c-4f07-aeca-087106655e3e" name="Changes" comment="2025.3.28">
+      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/mc/config/WebMvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/mc/util/FileUploadUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/views/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/mc/app/dto/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/mc/app/dto/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/mc/app/frame/MCService.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/mc/app/frame/MCService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/mc/app/service/ItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/mc/app/service/ItemService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/mc/controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/mc/controller/ItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/resources/mapper/itemmapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/resources/mapper/itemmapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -423,15 +423,7 @@
       <workItem from="1742946156366" duration="16819000" />
       <workItem from="1742970240605" duration="11000" />
       <workItem from="1743033588288" duration="17259000" />
-      <workItem from="1743119881660" duration="6281000" />
-    </task>
-    <task id="LOCAL-00072" summary="2025.3.19">
-      <option name="closed" value="true" />
-      <created>1742363999443</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1742363999443</updated>
+      <workItem from="1743119881660" duration="10416000" />
     </task>
     <task id="LOCAL-00073" summary="2025.3.19">
       <option name="closed" value="true" />
@@ -817,7 +809,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743051964698</updated>
     </task>
-    <option name="localTasksCounter" value="121" />
+    <task id="LOCAL-00121" summary="2025.3.28">
+      <option name="closed" value="true" />
+      <created>1743126355573</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1743126355577</updated>
+    </task>
+    <option name="localTasksCounter" value="122" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -853,7 +853,8 @@
     <MESSAGE value="2025.3.25" />
     <MESSAGE value="2025.3.26" />
     <MESSAGE value="2025.3.27" />
-    <option name="LAST_COMMIT_MESSAGE" value="2025.3.27" />
+    <MESSAGE value="2025.3.28" />
+    <option name="LAST_COMMIT_MESSAGE" value="2025.3.28" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

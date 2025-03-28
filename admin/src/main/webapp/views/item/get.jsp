@@ -40,7 +40,7 @@
                             <td>
                                 <a href="<c:url value="/item/detail"/>?id=${item.itemId}">
 <%--                                    <img  src="<c:url value="/imgs"/>/${item.itemImgname}">--%>
-                                    ${item.itemImgname}
+                                        <img src="<c:url value="/imgs"/>/${item.itemImgname}">
                                 </a>
                             </td>
                             <td>${item.itemId}</td>

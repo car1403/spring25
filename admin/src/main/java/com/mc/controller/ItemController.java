@@ -33,6 +33,11 @@ public class ItemController {
         model.addAttribute("center", dir+"add");
         return "index";
     }
+    @RequestMapping("/addimpl")
+    public String addimpl(Model model, Item item) throws Exception {
+        itemService.add(item);
+        return "redirect:/item/detail?id="+item.getItemId();
+    }
     @RequestMapping("/detail")
     public String detail(Model model, @RequestParam("id") int id) throws Exception {
         Item item = null;
