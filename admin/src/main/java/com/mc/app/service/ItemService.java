@@ -33,6 +33,8 @@ public class ItemService implements MCService<Item, Integer> {
 
     @Override
     public void del(Integer integer) throws Exception {
+        String imgname = itemRepository.selectOne(integer).getItemImgname();
+        FileUploadUtil.deleteFile(imgname, uploadDir);
         itemRepository.delete(integer);
     }
 

@@ -41,12 +41,14 @@ public class ItemController {
     @RequestMapping("/detail")
     public String detail(Model model, @RequestParam("id") int id) throws Exception {
         Item item = null;
-
         item = itemService.get(id);
         model.addAttribute("item",item);
         model.addAttribute("center",dir+"detail");
-
-
         return "index";
+    }
+    @RequestMapping("/del")
+    public String del(Model model, @RequestParam("id") int id) throws Exception {
+        itemService.del(id);
+        return "redirect:/item/get";
     }
 }
