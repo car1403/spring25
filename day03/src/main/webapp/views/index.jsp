@@ -16,7 +16,6 @@
     <%-- KaKao Map Library   --%>
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a2f29f93dc4c0e209e8a6da86a3e488d"></script>
     <%-- High Chart Library  --%>
-
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://code.highcharts.com/highcharts-3d.js"></script>
     <script src="https://code.highcharts.com/modules/cylinder.js"></script>
@@ -24,6 +23,10 @@
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
     <script src="https://code.highcharts.com/modules/export-data.js"></script>
     <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+    <%-- Web Socket Lib    --%>
+    <script src="<c:url value="/webjars/sockjs-client/sockjs.min.js"/> "></script>
+    <script src="<c:url value="/webjars/stomp-websocket/stomp.min.js"/> "></script>
 
     <style>
         .fakeimg {

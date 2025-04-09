@@ -43,6 +43,9 @@
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
     <script src="https://code.highcharts.com/modules/export-data.js"></script>
     <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <%-- Web Socket Lib    --%>
+    <script src="<c:url value="/webjars/sockjs-client/sockjs.min.js"/> "></script>
+    <script src="<c:url value="/webjars/stomp-websocket/stomp.min.js"/> "></script>
 
     <script>
         let index = {

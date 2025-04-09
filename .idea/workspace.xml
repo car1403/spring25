@@ -4,14 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b991fd35-e78c-4f07-aeca-087106655e3e" name="Changes" comment="2025.3.28">
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/views/ws.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/ws.jsp" afterDir="false" />
+    <list default="true" id="b991fd35-e78c-4f07-aeca-087106655e3e" name="Changes" comment="2025.4.09">
+      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/mc/config/StomWebSocketConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/admin/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/mc/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/mc/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/resources/application-dev.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/views/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/views/ws.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/views/ws.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/day03/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day03/src/main/java/com/mc/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/resources/application-dev.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day03/src/main/webapp/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/src/main/webapp/views/ws.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/ws.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +200,7 @@
       <recent name="com.mc.app.dto" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.admin [bootRun]">
+  <component name="RunManager" selected="Gradle.day03 [bootRun]">
     <configuration name="Day03ApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -380,8 +387,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.admin [bootRun]" />
         <item itemvalue="Gradle.day03 [bootRun]" />
+        <item itemvalue="Gradle.admin [bootRun]" />
         <item itemvalue="Gradle.admin [bootTestRun]" />
         <item itemvalue="Gradle.Select" />
         <item itemvalue="Gradle.Day03ApplicationTests" />
@@ -425,15 +432,7 @@
       <workItem from="1743119881660" duration="13484000" />
       <workItem from="1743143307811" duration="2989000" />
       <workItem from="1743146436793" duration="2480000" />
-      <workItem from="1744156871138" duration="1802000" />
-    </task>
-    <task id="LOCAL-00077" summary="2025.3.20">
-      <option name="closed" value="true" />
-      <created>1742437765255</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1742437765255</updated>
+      <workItem from="1744156871138" duration="4871000" />
     </task>
     <task id="LOCAL-00078" summary="2025.3.20">
       <option name="closed" value="true" />
@@ -819,7 +818,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743140149858</updated>
     </task>
-    <option name="localTasksCounter" value="126" />
+    <task id="LOCAL-00126" summary="2025.4.09">
+      <option name="closed" value="true" />
+      <created>1744159347057</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1744159347059</updated>
+    </task>
+    <option name="localTasksCounter" value="127" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -856,7 +863,8 @@
     <MESSAGE value="2025.3.26" />
     <MESSAGE value="2025.3.27" />
     <MESSAGE value="2025.3.28" />
-    <option name="LAST_COMMIT_MESSAGE" value="2025.3.28" />
+    <MESSAGE value="2025.4.09" />
+    <option name="LAST_COMMIT_MESSAGE" value="2025.4.09" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

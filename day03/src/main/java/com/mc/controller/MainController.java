@@ -5,6 +5,7 @@ import com.mc.app.dto.Cart;
 import com.mc.app.service.BoardService;
 import com.mc.app.service.CartService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,6 +22,8 @@ public class MainController {
     final BoardService boardService;
     final CartService cartService;
 
+    @Value("${app.url.websocket-server-url}")
+    String websocketServerUrl;
 
     @RequestMapping("/")
     public String main(Model model) throws Exception {
@@ -32,6 +35,7 @@ public class MainController {
     }
     @RequestMapping("/ws")
     public String ws(Model model){
+        model.addAttribute("serverurl",websocketServerUrl);
         model.addAttribute("center","ws");
         return "index";
     }

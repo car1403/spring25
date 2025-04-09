@@ -39,5 +39,7 @@ app:
   dir:
     imgdir: file:///D:/spring25/imgs/  # 화면 출력 용
     uploadimgdir: D:/spring25/imgs/    # 파일 Write 용
+  url:
+   websocket-server-url: http://127.0.0.1:8088
 
 
