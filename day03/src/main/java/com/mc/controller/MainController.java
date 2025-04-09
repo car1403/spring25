@@ -30,7 +30,11 @@ public class MainController {
         model.addAttribute("boards", boards);
         return "index";
     }
-
+    @RequestMapping("/ws")
+    public String ws(Model model){
+        model.addAttribute("center","ws");
+        return "index";
+    }
     @RequestMapping("/link1")
     public String link1(Model model){
         model.addAttribute("center","link1");

@@ -138,6 +138,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="<c:url value="/item"/>">Item</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<c:url value="/ws"/>">WebSocket</a>
+                </li>
             </c:if>
         </ul>
     </div>

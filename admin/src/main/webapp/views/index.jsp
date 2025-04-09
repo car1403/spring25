@@ -93,7 +93,7 @@
             <c:if test="${sessionScope.admin != null}">
                 <!-- Web Socket -->
                 <li class="nav-item active">
-                    <a class="nav-link" href="<c:url value="/websocket" />">
+                    <a class="nav-link" href="<c:url value="/ws" />">
                         <i class="fas fa-fw fa-tachometer-alt"></i>
                         <span>Web Socket</span></a>
                 </li>

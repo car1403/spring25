@@ -16,4 +16,10 @@ public class MainController {
         return "index";
     }
 
+    @RequestMapping("/ws")
+    public String ws(Model model){
+        model.addAttribute("center","ws");
+        return "index";
+    }
+
 }
