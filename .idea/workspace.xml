@@ -5,20 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b991fd35-e78c-4f07-aeca-087106655e3e" name="Changes" comment="2025.4.09">
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/mc/config/StomWebSocketConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/mc/app/msg/Msg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/mc/controller/MsgController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/admin/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/mc/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/mc/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/views/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/views/ws.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/views/ws.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/day03/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03/src/main/java/com/mc/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03/src/main/webapp/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03/src/main/webapp/views/ws.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/ws.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,65 +112,65 @@
     <option name="flattenModules" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.ApiExplorer.executor": "Run",
-    "Gradle.Build day01.executor": "Run",
-    "Gradle.Build day02.executor": "Run",
-    "Gradle.Build day02ws1.executor": "Run",
-    "Gradle.Build day02ws2.executor": "Run",
-    "Gradle.Build day03.executor": "Run",
-    "Gradle.Day01ApplicationTests.executor": "Run",
-    "Gradle.Day02ApplicationTests.executor": "Run",
-    "Gradle.Day03ApplicationTests.executor": "Run",
-    "Gradle.Delete.executor": "Run",
-    "Gradle.Download Sources.executor": "Run",
-    "Gradle.Hit.executor": "Run",
-    "Gradle.Insert (1).executor": "Run",
-    "Gradle.Insert (2).executor": "Run",
-    "Gradle.Insert.executor": "Run",
-    "Gradle.Select (1).executor": "Run",
-    "Gradle.Select (2).executor": "Run",
-    "Gradle.Select.executor": "Run",
-    "Gradle.SelectOne (1).executor": "Run",
-    "Gradle.SelectOne.executor": "Run",
-    "Gradle.Update (1).executor": "Run",
-    "Gradle.Update.executor": "Run",
-    "Gradle.Weather2ApplicationTests.executor": "Run",
-    "Gradle.WeatherApplicationTests.executor": "Run",
-    "Gradle.WeatherForeCastApplicationTests.executor": "Run",
-    "Gradle.admin [bootRun].executor": "Run",
-    "Gradle.admin [bootTestRun].executor": "Run",
-    "Gradle.day01 [bootRun].executor": "Run",
-    "Gradle.day02 [bootRun].executor": "Run",
-    "Gradle.day02ws1 [bootRun].executor": "Run",
-    "Gradle.day02ws2 [bootRun].executor": "Run",
-    "Gradle.day03 [bootRun].executor": "Run",
-    "Gradle.day03 [bootWar].executor": "Run",
-    "Gradle.day03 [war].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.Day01Application.executor": "Run",
-    "extract.method.default.visibility": "private",
-    "jdk.selected.JAVA_MODULE": "17",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/spring25/admin/src/main/webapp/views",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Global Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.41657078",
-    "settings.editor.selected.configurable": "fileTemplates",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.ApiExplorer.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build day01.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build day02.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build day02ws1.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build day02ws2.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build day03.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Day01ApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Day02ApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Day03ApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Delete.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Hit.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Insert (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Insert (2).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Insert.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Select (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Select (2).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Select.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SelectOne (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SelectOne.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Update (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Update.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Weather2ApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.WeatherApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.WeatherForeCastApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.admin [bootRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.admin [bootTestRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.day01 [bootRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.day02 [bootRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.day02ws1 [bootRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.day02ws2 [bootRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.day03 [bootRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.day03 [bootWar].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.day03 [war].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.Day01Application.executor&quot;: &quot;Run&quot;,
+    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/spring25/admin/src/main/webapp/views&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.41657078&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\spring25\admin\src\main\webapp\views" />
@@ -200,7 +190,7 @@
       <recent name="com.mc.app.dto" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.day03 [bootRun]">
+  <component name="RunManager" selected="Gradle.admin [bootRun]">
     <configuration name="Day03ApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -215,6 +205,54 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;com.mc.Day03ApplicationTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Day03ApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/day03" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.mc.Day03ApplicationTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Select" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/day03" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.mc.cust.Select&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -271,6 +309,28 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="admin [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/admin" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootRun" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="admin [bootTestRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -283,6 +343,50 @@
         <option name="taskNames">
           <list>
             <option value="bootTestRun" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="admin [bootTestRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/admin" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootTestRun" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="day03 [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/day03" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootRun" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -337,10 +441,48 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="day03 [bootWar]" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/day03" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootWar" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="AdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="admin.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.mc.AdminApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="admin.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mc.AdminApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day01Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="day01.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mc.Day01Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -361,10 +503,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day02Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="day02.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mc.Day02Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Day02ws1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="day02ws1.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.mc.Day02ws1Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day02ws1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="day02ws1.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mc.Day02ws1Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day02ws2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="day02ws2.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mc.Day02ws2Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -385,10 +551,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day03Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="day03.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mc.Day03Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.day03 [bootRun]" />
         <item itemvalue="Gradle.admin [bootRun]" />
+        <item itemvalue="Gradle.day03 [bootRun]" />
         <item itemvalue="Gradle.admin [bootTestRun]" />
         <item itemvalue="Gradle.Select" />
         <item itemvalue="Gradle.Day03ApplicationTests" />
@@ -432,15 +606,8 @@
       <workItem from="1743119881660" duration="13484000" />
       <workItem from="1743143307811" duration="2989000" />
       <workItem from="1743146436793" duration="2480000" />
-      <workItem from="1744156871138" duration="4871000" />
-    </task>
-    <task id="LOCAL-00078" summary="2025.3.20">
-      <option name="closed" value="true" />
-      <created>1742438487401</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1742438487401</updated>
+      <workItem from="1744156871138" duration="10868000" />
+      <workItem from="1744242805319" duration="2793000" />
     </task>
     <task id="LOCAL-00079" summary="2025.3.20">
       <option name="closed" value="true" />
@@ -826,7 +993,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744159347059</updated>
     </task>
-    <option name="localTasksCounter" value="127" />
+    <task id="LOCAL-00127" summary="2025.4.09">
+      <option name="closed" value="true" />
+      <created>1744163023805</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1744163023805</updated>
+    </task>
+    <option name="localTasksCounter" value="128" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
