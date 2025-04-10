@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b991fd35-e78c-4f07-aeca-087106655e3e" name="Changes" comment="2025.4.09">
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/mc/app/msg/Msg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/mc/controller/MsgController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/views/ws.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/views/ws.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/src/main/webapp/views/ws.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/ws.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +188,7 @@
       <recent name="com.mc.app.dto" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.admin [bootRun]">
+  <component name="RunManager" selected="Gradle.day03 [bootRun]">
     <configuration name="Day03ApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -561,8 +559,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.admin [bootRun]" />
         <item itemvalue="Gradle.day03 [bootRun]" />
+        <item itemvalue="Gradle.admin [bootRun]" />
         <item itemvalue="Gradle.admin [bootTestRun]" />
         <item itemvalue="Gradle.Select" />
         <item itemvalue="Gradle.Day03ApplicationTests" />
@@ -607,15 +605,7 @@
       <workItem from="1743143307811" duration="2989000" />
       <workItem from="1743146436793" duration="2480000" />
       <workItem from="1744156871138" duration="10868000" />
-      <workItem from="1744242805319" duration="2793000" />
-    </task>
-    <task id="LOCAL-00079" summary="2025.3.20">
-      <option name="closed" value="true" />
-      <created>1742447716479</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1742447716480</updated>
+      <workItem from="1744242805319" duration="3753000" />
     </task>
     <task id="LOCAL-00080" summary="2025.3.20">
       <option name="closed" value="true" />
@@ -1001,7 +991,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744163023805</updated>
     </task>
-    <option name="localTasksCounter" value="128" />
+    <task id="LOCAL-00128" summary="2025.4.09">
+      <option name="closed" value="true" />
+      <created>1744245786879</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1744245786881</updated>
+    </task>
+    <option name="localTasksCounter" value="129" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
