@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b991fd35-e78c-4f07-aeca-087106655e3e" name="Changes" comment="2025.4.11">
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/mc/controller/SseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/mc/controller/SseEmitters.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/mc/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/mc/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/mc/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/mc/config/WebMvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/mc/controller/SseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/mc/controller/SseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/mc/controller/SseEmitters.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/mc/controller/SseEmitters.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/mc/scheduler/Scheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/mc/scheduler/Scheduler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/views/center.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/views/center.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/src/main/webapp/views/center.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/center.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -609,15 +612,7 @@
       <workItem from="1743146436793" duration="2480000" />
       <workItem from="1744156871138" duration="10868000" />
       <workItem from="1744242805319" duration="12243000" />
-      <workItem from="1744329680816" duration="7997000" />
-    </task>
-    <task id="LOCAL-00084" summary="2025.3.20">
-      <option name="closed" value="true" />
-      <created>1742517430118</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1742517430118</updated>
+      <workItem from="1744329680816" duration="19110000" />
     </task>
     <task id="LOCAL-00085" summary="2025.3.20">
       <option name="closed" value="true" />
@@ -1003,7 +998,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744333852459</updated>
     </task>
-    <option name="localTasksCounter" value="133" />
+    <task id="LOCAL-00133" summary="2025.4.11">
+      <option name="closed" value="true" />
+      <created>1744338524072</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1744338524073</updated>
+    </task>
+    <option name="localTasksCounter" value="134" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

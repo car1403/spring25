@@ -7,6 +7,28 @@
     const center = {
         init:function(){
             this.getData();
+            this.sse();
+        },
+        sse:function(){
+
+            const sse = new EventSource("http://192.168.45.117:8088/connect?id=id01");
+
+            sse.addEventListener('connect', (e) => {
+                const { data: receivedConnectData } = e;
+                console.log('connect event data: ',receivedConnectData);  // "connected!"
+            });
+            sse.addEventListener('count', e => {
+                const { data: receivedCount } = e;
+                console.log("count event data",receivedCount);
+                $('#count').html(receivedCount);
+            });
+            sse.addEventListener('adminmsg', e => {
+                const { data: receivedData } = e;
+                console.log("count event data",receivedData);
+                console.log("count event data2",JSON.parse(receivedData).content1);
+                //this.display(JSON.parse(receivedData));
+                //$('#count').html(receivedData);
+            });
         },
         getData:function(){
             $.ajax({
@@ -46,6 +68,7 @@
 <div class="col-sm-10">
     <h2>TITLE HEADING</h2>
     <p id="wt">Title description, Sep 2, 2025</p>
+    <p id="count">Title description, Sep 2, 2025</p>
     <div id="wt2"></div>
     <table class="table">
         <thead class="thead-light">

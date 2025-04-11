@@ -19,7 +19,7 @@ public class Scheduler {
     private final SimpMessageSendingOperations simpMessageSendingOperations;
     private final SseEmitters sseEmitters;
 
-    @Scheduled(cron = "*/5 * * * * *")
+    @Scheduled(cron = "*/30 * * * * *")
     public void cronJobDailyUpdate() {
         log.info("====================================================");
         Random r = new Random();

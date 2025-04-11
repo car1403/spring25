@@ -4,9 +4,7 @@ import java.io.IOException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
 
 @RestController
@@ -19,14 +17,15 @@ public class SseController {
         this.sseEmitters = sseEmitters;
     }
 
-    @GetMapping(value = "/connect", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
-    public ResponseEntity<SseEmitter> connect() {
+    @GetMapping(value = "/connect/{id}", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
+    public ResponseEntity<SseEmitter> connect(@PathVariable("id") String clientId ) {
         SseEmitter emitter = new SseEmitter();
-        sseEmitters.add(emitter);
+        sseEmitters.add(clientId,emitter);
         try {
             emitter.send(SseEmitter.event()
                     .name("connect")
-                    .data("connected!"));
+                    .data(clientId)
+            );
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

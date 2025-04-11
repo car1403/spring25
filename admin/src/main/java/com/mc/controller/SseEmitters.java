@@ -7,21 +7,24 @@ import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.Map;
 import java.util.Random;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.atomic.AtomicLong;
 
 @Component
 @Slf4j
 public class SseEmitters {
-    private static final AtomicLong counter = new AtomicLong();
+    private final Map<String, SseEmitter> emitters = new ConcurrentHashMap<>();
 
-    private final List<SseEmitter> emitters = new CopyOnWriteArrayList<>();
     public void sendData(AdminMsg adminMsg){
 
-        emitters.forEach(emitter -> {
+        emitters.keySet().stream().filter(s->s.contains("admin") || s.contains("admin2")).forEach(key -> {
             try {
-                emitter.send(SseEmitter.event()
+                log.info("-------------------------------------"+key.toString());
+                //log.info("-------------------------------------"+emitter.);
+                emitters.get(key).send(SseEmitter.event()
                         .name("adminmsg")
                         .data(adminMsg));
             } catch ( IOException e) {
@@ -30,8 +33,10 @@ public class SseEmitters {
         });
     }
     public void count() {
-        long count = counter.incrementAndGet();
-        emitters.forEach(emitter -> {
+        Random random = new Random();
+
+        long count = random.nextLong()*100;
+        emitters.values().forEach(emitter -> {
             try {
                 emitter.send(SseEmitter.event()
                         .name("count")
@@ -41,19 +46,31 @@ public class SseEmitters {
             }
         });
     }
-    SseEmitter add(SseEmitter emitter) {
-        this.emitters.add(emitter);
+    SseEmitter add(String clientId, SseEmitter emitter) {
+        this.emitters.put(clientId,emitter);
         log.info("new emitter added: {}", emitter);
         log.info("emitter list size: {}", emitters.size());
+
+        // 연결 완료, 오류, 타임아웃 이벤트 핸들러 등록
         emitter.onCompletion(() -> {
-            log.info("onCompletion callback");
-            this.emitters.remove(emitter);    // 만료되면 리스트에서 삭제
+            emitters.remove(clientId);
+            cleanupEmitter(emitter);
+        });
+        emitter.onError((ex) -> {
+            emitters.remove(clientId);
+            cleanupEmitter(emitter);
         });
         emitter.onTimeout(() -> {
-            log.info("onTimeout callback");
-            emitter.complete();
+            emitters.remove(clientId);
+            cleanupEmitter(emitter);
         });
-
         return emitter;
+    }
+    private void cleanupEmitter(SseEmitter emitter) {
+        try {
+            emitter.complete();
+        } catch (Exception e) {
+            // 예외 처리
+        }
     }
 }

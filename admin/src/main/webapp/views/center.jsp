@@ -38,11 +38,12 @@
         },
         sse:function(){
 
-            const sse = new EventSource("http://127.0.0.1:8088/connect");
+            const sse = new EventSource("http://192.168.45.117:8088/connect/admin");
 
             sse.addEventListener('connect', (e) => {
-                const { data: receivedConnectData } = e;
+                const { data: receivedConnectData, id: id } = e;
                 console.log('connect event data: ',receivedConnectData);  // "connected!"
+                console.log('connect event name: ',id);
             });
             sse.addEventListener('count', e => {
                 const { data: receivedCount } = e;
