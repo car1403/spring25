@@ -2,6 +2,7 @@ package com.mc.scheduler;
 
 
 import com.mc.app.msg.AdminMsg;
+import com.mc.controller.SseEmitters;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.messaging.simp.SimpMessageSendingOperations;
@@ -16,6 +17,7 @@ import java.util.Random;
 public class Scheduler {
 
     private final SimpMessageSendingOperations simpMessageSendingOperations;
+    private final SseEmitters sseEmitters;
 
     @Scheduled(cron = "*/5 * * * * *")
     public void cronJobDailyUpdate() {
@@ -30,7 +32,9 @@ public class Scheduler {
         adminMsg.setContent2(content2);
         adminMsg.setContent3(content3);
         adminMsg.setContent4(content4);
-        simpMessageSendingOperations.convertAndSend("/send2",adminMsg);
+        sseEmitters.sendData(adminMsg);
+
+//        simpMessageSendingOperations.convertAndSend("/send2",adminMsg);
     }
 
 }

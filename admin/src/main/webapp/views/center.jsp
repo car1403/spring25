@@ -6,31 +6,70 @@
     let center_websocket = {
         stompClient:null,
         init:function(){
-            let socket = new SockJS('${serverurl}/wss');
-            this.stompClient = Stomp.over(socket);
-            console.log('Start -------');
 
-            this.stompClient.connect({},function(frame){
-                console.log(frame);
-                this.subscribe('/send2',function(msg){
-                    console.log(msg);
-                    console.log(typeof(msg));
-                    console.log(msg.content1);
-                    console.log(JSON.parse(msg.body).content1);
-                    $('#msg1').text(JSON.parse(msg.body).content1);
-                    $('#msg2').text(JSON.parse(msg.body).content2);
-                    $('#msg3').text(JSON.parse(msg.body).content3);
-                    $('#msg4').text(JSON.parse(msg.body).content4);
-                    $('#progress1').css('width',JSON.parse(msg.body).content1/100*100+'%');
-                    $('#progress1').attr('aria-valuenow',JSON.parse(msg.body).content1/100*100);
-                    $('#progress2').css('width',JSON.parse(msg.body).content2/1000*100+'%');
-                    $('#progress2').attr('aria-valuenow',JSON.parse(msg.body).content2/1000*100);
-                    $('#progress3').css('width',JSON.parse(msg.body).content3/500*100+'%');
-                    $('#progress3').attr('aria-valuenow',JSON.parse(msg.body).content3/500*100);
-                    $('#progress4').css('width',JSON.parse(msg.body).content4/10*100+'%');
-                    $('#progress4').attr('aria-valuenow',JSON.parse(msg.body).content4/10*100);
-                });
+
+            this.sse();
+
+            <%--let socket = new SockJS('${serverurl}/wss');--%>
+            <%--this.stompClient = Stomp.over(socket);--%>
+            <%--console.log('Start -------');--%>
+
+            <%--this.stompClient.connect({},function(frame){--%>
+            <%--    console.log(frame);--%>
+            <%--    this.subscribe('/send2',function(msg){--%>
+            <%--        console.log(msg);--%>
+            <%--        console.log(typeof(msg));--%>
+            <%--        console.log(msg.content1);--%>
+            <%--        console.log(JSON.parse(msg.body).content1);--%>
+            <%--        $('#msg1').text(JSON.parse(msg.body).content1);--%>
+            <%--        $('#msg2').text(JSON.parse(msg.body).content2);--%>
+            <%--        $('#msg3').text(JSON.parse(msg.body).content3);--%>
+            <%--        $('#msg4').text(JSON.parse(msg.body).content4);--%>
+            <%--        $('#progress1').css('width',JSON.parse(msg.body).content1/100*100+'%');--%>
+            <%--        $('#progress1').attr('aria-valuenow',JSON.parse(msg.body).content1/100*100);--%>
+            <%--        $('#progress2').css('width',JSON.parse(msg.body).content2/1000*100+'%');--%>
+            <%--        $('#progress2').attr('aria-valuenow',JSON.parse(msg.body).content2/1000*100);--%>
+            <%--        $('#progress3').css('width',JSON.parse(msg.body).content3/500*100+'%');--%>
+            <%--        $('#progress3').attr('aria-valuenow',JSON.parse(msg.body).content3/500*100);--%>
+            <%--        $('#progress4').css('width',JSON.parse(msg.body).content4/10*100+'%');--%>
+            <%--        $('#progress4').attr('aria-valuenow',JSON.parse(msg.body).content4/10*100);--%>
+            <%--    });--%>
+            <%--});--%>
+        },
+        sse:function(){
+
+            const sse = new EventSource("http://127.0.0.1:8088/connect");
+
+            sse.addEventListener('connect', (e) => {
+                const { data: receivedConnectData } = e;
+                console.log('connect event data: ',receivedConnectData);  // "connected!"
             });
+            sse.addEventListener('count', e => {
+                const { data: receivedCount } = e;
+                console.log("count event data",receivedCount);
+                $('#count').html(receivedCount);
+            });
+            sse.addEventListener('adminmsg', e => {
+                const { data: receivedData } = e;
+                console.log("count event data",receivedData);
+                console.log("count event data2",JSON.parse(receivedData).content1);
+                this.display(JSON.parse(receivedData));
+                //$('#count').html(receivedData);
+            });
+        },
+        display:function(data){
+            $('#msg1').text(data.content1);
+            $('#msg2').text(data.content2);
+            $('#msg3').text(data.content3);
+            $('#msg4').text(data.content4);
+            $('#progress1').css('width',data.content1/100*100+'%');
+            $('#progress1').attr('aria-valuenow',data.content1/100*100);
+            $('#progress2').css('width',data.content2/1000*100+'%');
+            $('#progress2').attr('aria-valuenow',data.content2/1000*100);
+            $('#progress3').css('width',data.content3/500*100+'%');
+            $('#progress3').attr('aria-valuenow',data.content3/500*100);
+            $('#progress4').css('width',data.content4/10*100+'%');
+            $('#progress4').attr('aria-valuenow',data.content4/10*100);
         }
     };
 
@@ -44,6 +83,7 @@
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
         <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+        <h1 class="h3 mb-0 text-gray-800" id="count">Dashboard</h1>
         <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                 class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
     </div>
