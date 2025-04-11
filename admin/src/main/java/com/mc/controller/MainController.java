@@ -17,6 +17,7 @@ public class MainController {
 
     @RequestMapping("/")
     public String main(Model model){
+        model.addAttribute("serverurl", websocketServerUrl);
         return "index";
     }
 

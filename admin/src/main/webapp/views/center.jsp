@@ -3,9 +3,39 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <script>
+    let center_websocket = {
+        stompClient:null,
+        init:function(){
+            let socket = new SockJS('${serverurl}/wss');
+            this.stompClient = Stomp.over(socket);
+            console.log('Start -------');
+
+            this.stompClient.connect({},function(frame){
+                console.log(frame);
+                this.subscribe('/send2',function(msg){
+                    console.log(msg);
+                    console.log(typeof(msg));
+                    console.log(msg.content1);
+                    console.log(JSON.parse(msg.body).content1);
+                    // $('#msg1').text(JSON.parse(msg.body).content1);
+                    // $('#msg2').text(JSON.parse(msg.body).content2);
+                    // $('#msg3').text(JSON.parse(msg.body).content3);
+                    // $('#msg4').text(JSON.parse(msg.body).content4);
+                    // $('#progress1').css('width',JSON.parse(msg.body).content1/100*100+'%');
+                    // $('#progress1').attr('aria-valuenow',JSON.parse(msg.body).content1/100*100);
+                    // $('#progress2').css('width',JSON.parse(msg.body).content2/1000*100+'%');
+                    // $('#progress2').attr('aria-valuenow',JSON.parse(msg.body).content2/1000*100);
+                    // $('#progress3').css('width',JSON.parse(msg.body).content3/500*100+'%');
+                    // $('#progress3').attr('aria-valuenow',JSON.parse(msg.body).content3/500*100);
+                    // $('#progress4').css('width',JSON.parse(msg.body).content4/10*100+'%');
+                    // $('#progress4').attr('aria-valuenow',JSON.parse(msg.body).content4/10*100);
+                });
+            });
+        }
+    };
 
     $(function(){
-
+        center_websocket.init();
     });
 </script>
 

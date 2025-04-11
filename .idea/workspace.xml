@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b991fd35-e78c-4f07-aeca-087106655e3e" name="Changes" comment="2025.4.10">
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/mc/config/ScheduleConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/mc/scheduler/Scheduler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/mc/AdminApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/mc/AdminApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/mc/config/StomWebSocketConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/mc/config/StomWebSocketConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/views/center.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/views/center.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="b991fd35-e78c-4f07-aeca-087106655e3e" name="Changes" comment="2025.4.11" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -610,15 +603,7 @@
       <workItem from="1743146436793" duration="2480000" />
       <workItem from="1744156871138" duration="10868000" />
       <workItem from="1744242805319" duration="12243000" />
-      <workItem from="1744329680816" duration="1565000" />
-    </task>
-    <task id="LOCAL-00081" summary="2025.3.20">
-      <option name="closed" value="true" />
-      <created>1742450780078</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1742450780078</updated>
+      <workItem from="1744329680816" duration="2181000" />
     </task>
     <task id="LOCAL-00082" summary="2025.3.20">
       <option name="closed" value="true" />
@@ -1004,7 +989,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744247330681</updated>
     </task>
-    <option name="localTasksCounter" value="130" />
+    <task id="LOCAL-00130" summary="2025.4.11">
+      <option name="closed" value="true" />
+      <created>1744331788228</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1744331788229</updated>
+    </task>
+    <option name="localTasksCounter" value="131" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1043,7 +1036,8 @@
     <MESSAGE value="2025.3.28" />
     <MESSAGE value="2025.4.09" />
     <MESSAGE value="2025.4.10" />
-    <option name="LAST_COMMIT_MESSAGE" value="2025.4.10" />
+    <MESSAGE value="2025.4.11" />
+    <option name="LAST_COMMIT_MESSAGE" value="2025.4.11" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
