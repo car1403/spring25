@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b991fd35-e78c-4f07-aeca-087106655e3e" name="Changes" comment="2025.4.09">
+    <list default="true" id="b991fd35-e78c-4f07-aeca-087106655e3e" name="Changes" comment="2025.4.10">
+      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/mc/config/ScheduleConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/mc/scheduler/Scheduler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03/src/main/webapp/views/ws.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/ws.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/mc/AdminApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/mc/AdminApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/mc/config/StomWebSocketConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/mc/config/StomWebSocketConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/views/center.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/views/center.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,10 +166,10 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.41657078&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -188,7 +192,7 @@
       <recent name="com.mc.app.dto" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.day03 [bootRun]">
+  <component name="RunManager" selected="Gradle.admin [bootRun]">
     <configuration name="Day03ApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -559,8 +563,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.day03 [bootRun]" />
         <item itemvalue="Gradle.admin [bootRun]" />
+        <item itemvalue="Gradle.day03 [bootRun]" />
         <item itemvalue="Gradle.admin [bootTestRun]" />
         <item itemvalue="Gradle.Select" />
         <item itemvalue="Gradle.Day03ApplicationTests" />
@@ -605,15 +609,8 @@
       <workItem from="1743143307811" duration="2989000" />
       <workItem from="1743146436793" duration="2480000" />
       <workItem from="1744156871138" duration="10868000" />
-      <workItem from="1744242805319" duration="3753000" />
-    </task>
-    <task id="LOCAL-00080" summary="2025.3.20">
-      <option name="closed" value="true" />
-      <created>1742448067408</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1742448067408</updated>
+      <workItem from="1744242805319" duration="12243000" />
+      <workItem from="1744329680816" duration="1565000" />
     </task>
     <task id="LOCAL-00081" summary="2025.3.20">
       <option name="closed" value="true" />
@@ -999,7 +996,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744245786881</updated>
     </task>
-    <option name="localTasksCounter" value="129" />
+    <task id="LOCAL-00129" summary="2025.4.10">
+      <option name="closed" value="true" />
+      <created>1744247330680</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1744247330681</updated>
+    </task>
+    <option name="localTasksCounter" value="130" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1037,7 +1042,8 @@
     <MESSAGE value="2025.3.27" />
     <MESSAGE value="2025.3.28" />
     <MESSAGE value="2025.4.09" />
-    <option name="LAST_COMMIT_MESSAGE" value="2025.4.09" />
+    <MESSAGE value="2025.4.10" />
+    <option name="LAST_COMMIT_MESSAGE" value="2025.4.10" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

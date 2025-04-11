@@ -13,7 +13,7 @@ public class StomWebSocketConfig implements WebSocketMessageBrokerConfigurer{
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
         registry.addEndpoint("/ws").setAllowedOriginPatterns("*").withSockJS();
-//        registry.addEndpoint("/wss").setAllowedOriginPatterns("*").withSockJS();
+        registry.addEndpoint("/wss").setAllowedOriginPatterns("*").withSockJS();
 //        registry.addEndpoint("/chat").setAllowedOriginPatterns("*").withSockJS();
     }
     @Override
