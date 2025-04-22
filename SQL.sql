@@ -201,3 +201,14 @@ INSERT INTO marker VALUES (null, '국밥집', 'http://www.naver.com', 33.4998002
 INSERT INTO marker VALUES (null, '닭발집', 'http://www.daum.net', 33.4997002, 126.5391787, 'dak.jpg', 'J');
 INSERT INTO marker VALUES (null, '양꼬치집', 'http://www.google.com', 33.4996002, 126.5273787, 'yang.jpg', 'J');
 SELECT * FROM marker;
+
+CREATE TABLE `board` (
+                         `board_id` int NOT NULL AUTO_INCREMENT,
+                         `board_title` varchar(100) DEFAULT NULL,
+                         `board_content` varchar(300) DEFAULT NULL,
+                         `board_author` varchar(30) DEFAULT NULL,
+                         `board_hit` int DEFAULT '0',
+                         `board_rdate` datetime DEFAULT CURRENT_TIMESTAMP,
+                         `board_udate` datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+                         PRIMARY KEY (`board_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci

@@ -13,7 +13,7 @@ spring:
       prefix: /views/
       suffix: .jsp
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/mcdb?characterEncoding=utf8
+    url: jdbc:mysql://118.67.130.8:3306/mcdb?characterEncoding=utf8
     username: ENC(fYs/Vy061CXL8OWqFyk8tg==)
     password: ENC(8AgoBTucPbZpCjsWw11uDQ==)
 
