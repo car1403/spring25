@@ -8,7 +8,7 @@
         init:function(){
 
 
-            this.sse();
+            this.ss();
 
             <%--let socket = new SockJS('${serverurl}/wss');--%>
             <%--this.stompClient = Stomp.over(socket);--%>
@@ -36,9 +36,13 @@
             <%--    });--%>
             <%--});--%>
         },
-        sse:function(){
+        ss:function(){
 
             const sse = new EventSource("http://192.168.45.117:8088/connect/admin");
+            sse.addEventListener('error', function (){
+
+            })
+
 
             sse.addEventListener('connect', (e) => {
                 const { data: receivedConnectData, id: id } = e;
