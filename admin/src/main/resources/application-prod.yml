@@ -10,8 +10,7 @@ server:
     encoding:
       charset: UTF-8
       force: true
-    session:
-      timeout: 3600s
+
 # 2. Spring Config
 spring:
   mvc:
@@ -43,9 +42,9 @@ app:
     algo: PBEWithMD5AndDES  # Twoway
     skey: mykey             # Twoway
   dir:
-    imgdir: file:///D:/spring25/imgs/  # 화면 출력 용
-    uploadimgdir: D:/spring25/imgs/    # 파일 Write 용
+    imgdir: file:///c:/shop/imgs/  # 화면 출력 용
+    uploadimgdir: c:/shop/imgs/    # 파일 Write 용
   url:
-   websocket-server-url: https://127.0.0.1:8088
+   websocket-server-url: https://118.67.130.8:8088
 
 

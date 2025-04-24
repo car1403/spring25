@@ -38,7 +38,7 @@
         },
         ss:function(){
 
-            const sse = new EventSource("http://192.168.45.117:8088/connect/admin");
+            const sse = new EventSource("${serverurl}/connect/admin");
             sse.addEventListener('error', function (){
 
             })

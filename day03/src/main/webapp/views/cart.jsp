@@ -52,7 +52,7 @@
         <tbody>
         <c:forEach var="c" items="${carts}">
             <tr>
-                <td><img id="cart_item_img" src="<c:url value="/img/${c.itemImgname}"/>"></td>
+                <td><img id="cart_item_img" src="<c:url value="/imgs/${c.itemImgname}"/>"></td>
                 <td>${c.itemName}</td>
                 <td><fmt:formatNumber type="number" pattern="#,###" value="${c.itemPrice}" /></td>
                 <td><input id="${c.itemId}" type="number" value="${c.cartCnt}"></td>

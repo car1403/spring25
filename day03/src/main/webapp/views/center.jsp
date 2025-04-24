@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page pageEncoding="UTF-8" contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%--Center Page--%>
@@ -35,13 +35,15 @@
                 url:'<c:url value="/getwh"/>',
                 success:(result)=>{
                     this.display(result);
-                }
+                },
+                contentType: "application/x-www-form-urlencoded; charset=euc-kr"
             });
             $.ajax({
                 url:'<c:url value="/getwh2"/>',
                 success:(result)=>{
                     this.display2(result);
-                }
+                },
+                contentType: "application/x-www-form-urlencoded; charset=euc-kr"
             });
         },
         display:function(result){
