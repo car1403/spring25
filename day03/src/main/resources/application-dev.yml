@@ -48,4 +48,16 @@ app:
   url:
     websocket-server-url: https://127.0.0.1:8088
 
+#NCP
+ncp:
+  ocr:
+    url: https://vxrveromp5.apigw.ntruss.com/custom/v1/41402/18b143c9a91a486724bd1c3190b0543f23234a62611c7985c9055b1385794b1a/infer
+    key: anRVbFZOWkpTaUdhS3NibFJRblNkc1BvQnFVanJuTGY=
+
+
+
+
+
+
+
 

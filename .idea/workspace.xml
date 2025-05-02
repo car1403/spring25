@@ -4,20 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b991fd35-e78c-4f07-aeca-087106655e3e" name="Changes" comment="2025.4.11">
-      <change afterPath="$PROJECT_DIR$/admin/src/main/resources/application-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/resources/keystore.p12" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03/src/main/resources/application-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03/src/main/resources/keystore.p12" afterDir="false" />
+    <list default="true" id="b991fd35-e78c-4f07-aeca-087106655e3e" name="Changes" comment="2025.4.24">
+      <change afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/app/dto/OcrDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/app/msg/AdminMsg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/app/msg/Msg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/config/StomWebSocketConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/controller/NcpController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/util/ChatBotUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/util/FileUploadUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/util/KakaoLocal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/util/OCRUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/util/PapagoUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/link5.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/src/test/java/com/mc/ncp/OCRTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/bnumber.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03/src/main/java/com/mc/Day03Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/Day03Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03/src/main/java/com/mc/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/config/WebMvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03/src/main/java/com/mc/util/WeatherUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/util/WeatherUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/day03/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/src/main/java/com/mc/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/java/com/mc/controller/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day03/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03/src/main/webapp/views/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/cart.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03/src/main/webapp/views/center.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/center.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03/src/main/webapp/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/src/main/webapp/views/left.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/left.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/src/main/webapp/views/link4.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/main/webapp/views/link4.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,83 +121,84 @@
     <option name="flattenModules" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.ApiExplorer.executor": "Run",
-    "Gradle.Build day01.executor": "Run",
-    "Gradle.Build day02.executor": "Run",
-    "Gradle.Build day02ws1.executor": "Run",
-    "Gradle.Build day02ws2.executor": "Run",
-    "Gradle.Build day03.executor": "Run",
-    "Gradle.Day01ApplicationTests.executor": "Run",
-    "Gradle.Day02ApplicationTests.executor": "Run",
-    "Gradle.Day03ApplicationTests.executor": "Run",
-    "Gradle.Delete.executor": "Run",
-    "Gradle.Download Sources.executor": "Run",
-    "Gradle.Hit.executor": "Run",
-    "Gradle.Insert (1).executor": "Run",
-    "Gradle.Insert (2).executor": "Run",
-    "Gradle.Insert.executor": "Run",
-    "Gradle.Select (1).executor": "Run",
-    "Gradle.Select (2).executor": "Run",
-    "Gradle.Select.executor": "Run",
-    "Gradle.SelectOne (1).executor": "Run",
-    "Gradle.SelectOne.executor": "Run",
-    "Gradle.Update (1).executor": "Run",
-    "Gradle.Update.executor": "Run",
-    "Gradle.Weather2ApplicationTests.executor": "Run",
-    "Gradle.WeatherApplicationTests.executor": "Run",
-    "Gradle.WeatherForeCastApplicationTests.executor": "Run",
-    "Gradle.admin [bootRun].executor": "Run",
-    "Gradle.admin [bootTestRun].executor": "Run",
-    "Gradle.admin [bootWar].executor": "Run",
-    "Gradle.day01 [bootRun].executor": "Run",
-    "Gradle.day02 [bootRun].executor": "Run",
-    "Gradle.day02ws1 [bootRun].executor": "Run",
-    "Gradle.day02ws2 [bootRun].executor": "Run",
-    "Gradle.day03 [bootRun].executor": "Run",
-    "Gradle.day03 [bootWar].executor": "Run",
-    "Gradle.day03 [war].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.Day01Application.executor": "Run",
-    "extract.method.default.visibility": "private",
-    "jdk.selected.JAVA_MODULE": "17",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/spring25/day03/src/main/resources",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.41657078",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.ApiExplorer.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build day01.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build day02.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build day02ws1.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build day02ws2.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build day03.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Day01ApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Day02ApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Day03ApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Delete.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Hit.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Insert (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Insert (2).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Insert.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.OCRTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Select (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Select (2).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Select.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SelectOne (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SelectOne.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Update (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Update.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Weather2ApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.WeatherApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.WeatherForeCastApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.admin [bootRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.admin [bootTestRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.admin [bootWar].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.day01 [bootRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.day02 [bootRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.day02ws1 [bootRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.day02ws2 [bootRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.day03 [bootRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.day03 [bootWar].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.day03 [war].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.Day01Application.executor&quot;: &quot;Run&quot;,
+    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/spring25/day03/src/main/java/com/mc/util&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.41657078&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\spring25\day03\src\main\resources" />
-      <recent name="D:\spring25\admin\src\main\resources" />
-      <recent name="D:\spring25\admin\src\main\webapp\views" />
+      <recent name="D:\spring25\day03\src\main\java\com\mc\util" />
+      <recent name="D:\spring25\day03\src\main\java\com\mc\app" />
       <recent name="D:\spring25\day03\src\main\webapp\views" />
-      <recent name="D:\spring25\admin\src\main\resources\mapper" />
+      <recent name="D:\spring25\imgs" />
+      <recent name="D:\spring25\day03\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\spring25\day02ws1\src\main\resources\static\img" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.mc.config" />
+      <recent name="com.mc.util" />
       <recent name="com.mc.controller" />
+      <recent name="com.mc.ncp" />
+      <recent name="com.mc.config" />
       <recent name="com.mc.app.service" />
-      <recent name="com.mc.app.repository" />
-      <recent name="com.mc.app.dto" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -200,7 +207,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Gradle.day03 [bootRun]">
-    <configuration name="Day03ApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="OCRTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/day03" />
@@ -213,31 +220,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.mc.Day03ApplicationTests&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="Select" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/day03" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.mc.cust.Select&quot;" />
+            <option value="&quot;com.mc.ncp.OCRTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -569,10 +552,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.day03 [bootRun]" />
+        <item itemvalue="Gradle.OCRTests" />
         <item itemvalue="Gradle.admin [bootRun]" />
         <item itemvalue="Gradle.admin [bootWar]" />
         <item itemvalue="Gradle.admin [bootTestRun]" />
-        <item itemvalue="Gradle.Select" />
       </list>
     </recent_temporary>
   </component>
@@ -627,15 +610,10 @@
       <workItem from="1745387824397" duration="633000" />
       <workItem from="1745398143222" duration="775000" />
       <workItem from="1745452997831" duration="947000" />
-      <workItem from="1745453971044" duration="7247000" />
-    </task>
-    <task id="LOCAL-00088" summary="2025.3.21">
-      <option name="closed" value="true" />
-      <created>1742520802168</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1742520802168</updated>
+      <workItem from="1745453971044" duration="8166000" />
+      <workItem from="1745815550165" duration="5308000" />
+      <workItem from="1745987934626" duration="4932000" />
+      <workItem from="1746144910953" duration="2599000" />
     </task>
     <task id="LOCAL-00089" summary="2025.3.21">
       <option name="closed" value="true" />
@@ -1021,7 +999,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745286132906</updated>
     </task>
-    <option name="localTasksCounter" value="137" />
+    <task id="LOCAL-00137" summary="2025.4.24">
+      <option name="closed" value="true" />
+      <created>1745466822922</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1745466822923</updated>
+    </task>
+    <option name="localTasksCounter" value="138" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1061,7 +1047,8 @@
     <MESSAGE value="2025.4.09" />
     <MESSAGE value="2025.4.10" />
     <MESSAGE value="2025.4.11" />
-    <option name="LAST_COMMIT_MESSAGE" value="2025.4.11" />
+    <MESSAGE value="2025.4.24" />
+    <option name="LAST_COMMIT_MESSAGE" value="2025.4.24" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -59,7 +59,11 @@ public class MainController {
         model.addAttribute("center","link4");
         return "index";
     }
-
+    @RequestMapping("/link5")
+    public String link5(Model model){
+        model.addAttribute("center","link5");
+        return "index";
+    }
     @RequestMapping("/login")
     public String login(Model model){
         model.addAttribute("center","login");
